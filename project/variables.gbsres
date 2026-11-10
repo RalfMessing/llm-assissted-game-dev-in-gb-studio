@@ -119,12 +119,12 @@
     {
       "id": "2f01ca47-9361-4271-b1f2-75d55e85bf1f__L0",
       "name": "Defeated",
-      "symbol": "var_defeated_2"
+      "symbol": "var_defeated_0"
     },
     {
       "id": "98159e3a-0bfe-44ec-8312-9dcef04c253f__L0",
       "name": "Defeated",
-      "symbol": "var_defeated_2"
+      "symbol": "var_defeated_1"
     },
     {
       "id": "4912bee2-387a-472f-ae4f-6679b6149517__L0",
@@ -159,7 +159,17 @@
     {
       "id": "5fa52cd0-57cd-414c-8b93-5601c6e9636f__L0",
       "name": "Defeated",
-      "symbol": "var_defeated_2"
+      "symbol": "var_defeated_3"
+    },
+    {
+      "id": "20",
+      "name": "Chest Town Opened",
+      "symbol": "var_chest_town_opened"
+    },
+    {
+      "id": "e9cd48b8-2ad2-4563-9f71-e376ad7c8553__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
     }
   ],
   "constants": []

@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "e9cd48b8-2ad2-4563-9f71-e376ad7c8553",
+  "name": "Treasure Chest",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d4206af4-4d12-4cfd-a4a8-faa11d4aff34",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_2",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "20"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": false
+            },
+            "id": "41a2793c-0dba-4ac0-909d-6364e0e9b2a8"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "$self$",
+              "spriteStateId": "Open",
+              "loopAnim": true
+            },
+            "id": "d358a21b-76a5-481a-b64b-97aadcaf3262"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The chest has been opened!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "e4413520-a287-445d-8807-a0ecdb23df79"
+          }
+        ]
+      },
+      "id": "54ee091b-ca7e-46e9-aaca-d7ecaec7ee36"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 34,
+  "y": 47,
+  "_index": 9
+}
