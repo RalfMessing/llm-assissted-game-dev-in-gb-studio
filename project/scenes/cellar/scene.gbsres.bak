@@ -1,0 +1,52 @@
+{
+  "_resourceType": "scene",
+  "id": "3c677998-ff70-450e-ae82-a0a03e4c8695",
+  "_index": 2,
+  "name": "Cellar",
+  "backgroundId": "d00c5f03-8bbc-4ce9-adb0-e36bbecd7686",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f30+004+0f10+004+0fc+00a+0fa+00a+0fa+00c+0f8+00c+0f6+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f8+00a+0fa+00a+0f2c+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 605,
+  "y": 382,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_FRAME",
+            "args": {
+              "actorId": "4ade00be-f397-4203-9dc8-b8d5ced57ac2",
+              "frame": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "e475fe24-360d-42bc-babd-29644d223828"
+          }
+        ],
+        "false": []
+      },
+      "id": "4ac4020f-7672-48c6-88bd-15fbba13b95d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "d79e00e7-ef0b-4cef-8eb2-afff4f759f4a"
+}

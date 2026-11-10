@@ -1,0 +1,128 @@
+{
+  "_resourceType": "actor",
+  "id": "36961d62-34b8-42e7-9ae1-dd986d65d6f9",
+  "name": "potion_village",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "60f32bce-9f81-43be-86d2-88b48fc57517",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_13",
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "11",
+        "flag": 1,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "11",
+              "flag1": false,
+              "flag2": true,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "26d6d124-be8b-4c14-a51b-be6d1aa1b148"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "10"
+            },
+            "id": "d331f084-a234-40c8-ba87-581a8c74342e"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "0c5951af-a93f-4a3c-99fb-5c20bcea17a6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Potion collected"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "0d3808a0-8e2a-4888-95cb-f6f22c9790c0"
+          }
+        ]
+      },
+      "id": "571a8b57-0a03-43f8-8f92-8093ecaf5768"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "11",
+        "flag": 1,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5ef10727-51ea-4d8f-8b1b-1ce4ba979c76"
+          }
+        ],
+        "false": []
+      },
+      "id": "33e094ec-7a4f-409e-883d-816b00f9bfbc"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 6,
+  "y": 15,
+  "_index": 7
+}

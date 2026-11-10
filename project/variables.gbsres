@@ -1,0 +1,76 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Chest_open",
+      "symbol": "var_chest_open"
+    },
+    {
+      "id": "1",
+      "name": "Coins",
+      "symbol": "var_coins"
+    },
+    {
+      "id": "2",
+      "name": "Coin1_taken",
+      "symbol": "var_coin1_taken"
+    },
+    {
+      "id": "3",
+      "name": "Coin2_taken",
+      "symbol": "var_coin2_taken"
+    },
+    {
+      "id": "4",
+      "name": "Coin3_taken",
+      "symbol": "var_coin3_taken"
+    },
+    {
+      "id": "5",
+      "name": "Switch_On",
+      "symbol": "var_switch_on"
+    },
+    {
+      "id": "6",
+      "name": "Has_Key",
+      "symbol": "var_has_key"
+    },
+    {
+      "id": "7",
+      "name": "Teleport_open",
+      "symbol": "var_teleport_open"
+    },
+    {
+      "id": "f608c6b4-1350-4edd-99d1-43ac4606eb3f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "8",
+      "name": "Inventory_Apple",
+      "symbol": "var_inventory_apple"
+    },
+    {
+      "id": "9",
+      "name": "Inventory_Crystal",
+      "symbol": "var_inventory_crystal"
+    },
+    {
+      "id": "10",
+      "name": "Inventory_Trank",
+      "symbol": "var_inventory_trank"
+    },
+    {
+      "id": "11",
+      "name": "Inventory_Collected",
+      "symbol": "var_inventory_collected"
+    },
+    {
+      "id": "12",
+      "name": "UI_locked",
+      "symbol": "var_ui_locked"
+    }
+  ],
+  "constants": []
+}

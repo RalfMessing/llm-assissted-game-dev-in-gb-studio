@@ -1,0 +1,82 @@
+{
+  "_resourceType": "script",
+  "id": "78566e09-6e77-469b-bf36-8cf677889a64",
+  "name": "Open Inventory",
+  "description": "This is to open the inventory.",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "12"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "INVENTAR\nMuenzen    $01$\nSchluessel $06$\nApfel      $08$\nKristall   $09$\nTrank      $10$"
+              ],
+              "__section": "layout",
+              "avatarId": "",
+              "minHeight": 7,
+              "maxHeight": 10,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "de7872a7-ffb8-481c-b3fc-7f198512cc9f"
+          }
+        ]
+      },
+      "id": "a350b526-ec14-4910-918e-5b1187393204"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "78566e09-6e77-469b-bf36-8cf677889a64"
+            },
+            "id": "8ece6eb0-94d1-499a-a8e3-90ee8b77a8f0"
+          }
+        ]
+      },
+      "id": "b9c7134c-b977-4de3-832e-3dfb2c7c0c06"
+    }
+  ]
+}
