@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "be809259-a6ff-4d3d-befb-113f9c03df18",
+  "name": "dorf_layout_incl_teleporter",
+  "symbol": "bg_dorf_layout_incl_telepor",
+  "tileColors": "",
+  "filename": "dorf_layout_incl_teleporter.png",
+  "width": 40,
+  "height": 36,
+  "imageWidth": 320,
+  "imageHeight": 288
+}
