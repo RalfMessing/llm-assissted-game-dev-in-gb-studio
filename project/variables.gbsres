@@ -102,6 +102,11 @@
       "symbol": "var_weapon_cooldown"
     },
     {
+      "id": "20",
+      "name": "Chest Town Opened",
+      "symbol": "var_chest_town_opened"
+    },
+    {
       "id": "871ea302-1cc1-463c-b9d7-530aac38fe81__L0",
       "name": "Spoken to gardener",
       "symbol": "var_spoken_to_gardener"
@@ -160,11 +165,6 @@
       "id": "5fa52cd0-57cd-414c-8b93-5601c6e9636f__L0",
       "name": "Defeated",
       "symbol": "var_defeated_3"
-    },
-    {
-      "id": "20",
-      "name": "Chest Town Opened",
-      "symbol": "var_chest_town_opened"
     },
     {
       "id": "e9cd48b8-2ad2-4563-9f71-e376ad7c8553__L0",
