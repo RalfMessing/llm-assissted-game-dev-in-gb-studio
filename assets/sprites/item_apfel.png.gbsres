@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "2b579ffd-50fe-4c2c-8b0c-a53ccc04b8cd",
+  "name": "item_apfel",
+  "symbol": "sprite_item_apfel",
+  "states": [
+    {
+      "id": "a4118f85-318e-48de-b0c4-1d116e764678",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "92aa7ae6-aec0-4876-af5e-404af7666264",
+          "frames": [
+            {
+              "id": "0cdeeae1-356e-460a-a095-61fcd3e2eabf",
+              "tiles": [
+                {
+                  "id": "e476558a-faf4-4be5-ae97-1fe207cab56e",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "75353900-79e8-4761-b882-2453df344e7a",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "96997fb7-c788-439e-8059-f907e9ba456a",
+          "frames": [
+            {
+              "id": "ef860c6e-dc1a-480b-b566-59ac9bc26d8f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7c5bd50d-f9e1-4562-8e23-f4e7a65999a4",
+          "frames": [
+            {
+              "id": "8aebf4fa-f0e8-44c1-baae-e69746f67298",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4768f6ce-b898-4da8-adac-efe0d53adadd",
+          "frames": [
+            {
+              "id": "e5d20472-763e-40d3-a643-4a65592828f4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "11e8e604-d75d-40f0-8b34-183a1ddbcd83",
+          "frames": [
+            {
+              "id": "1e401b79-ddb7-45e6-b6d6-7f38af4e2b7c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "11d971cd-fdab-4fae-bc91-73a7aa4b80a9",
+          "frames": [
+            {
+              "id": "f941aba2-70c0-4c89-a3a4-ed17027545aa",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6e205724-4a96-4bd5-8ef9-5be69a1ab2c0",
+          "frames": [
+            {
+              "id": "691e58e4-e49a-452c-a4c3-318254d8d91d",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f1d6e778-664a-4e2d-946e-c9347cbecd65",
+          "frames": [
+            {
+              "id": "581a8a95-08a4-47e4-9920-2d4218ef80a4",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "item_apfel.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "9b7b84f78b112ab0f731e772995e4ef732eaf31e"
+}

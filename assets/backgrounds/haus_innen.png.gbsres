@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "b7781463-1c51-4c36-a370-264a0e1eff3c",
+  "name": "haus_innen",
+  "symbol": "bg_haus_innen",
+  "tileColors": "",
+  "filename": "haus_innen.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

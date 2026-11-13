@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d18ea502-0c23-4833-9e05-d16801e2f63c",
+  "name": "wald",
+  "symbol": "bg_wald",
+  "tileColors": "",
+  "filename": "wald.png",
+  "width": 40,
+  "height": 36,
+  "imageWidth": 320,
+  "imageHeight": 288
+}

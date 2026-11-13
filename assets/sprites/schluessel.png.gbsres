@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "3c2dfc79-0e18-4479-ba36-b7229f75c231",
+  "name": "schluessel",
+  "symbol": "sprite_schluessel",
+  "states": [
+    {
+      "id": "16d802ff-cddb-4463-95f2-a075624c2e64",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "1430eaab-9ea6-4120-9aa8-5f84f7307b5c",
+          "frames": [
+            {
+              "id": "87165b4d-2139-425c-a69e-8bd8883b3585",
+              "tiles": [
+                {
+                  "id": "9bcc19ae-74be-48cd-8b27-92adcc99a31e",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "5c21e2e9-a7be-4d8a-95e3-f12df5541664",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abb1bcb1-180d-42f9-93aa-c18ed2cc0e36",
+          "frames": [
+            {
+              "id": "ff5f36f2-9af5-469f-b0fa-dcb0ddf9fd1b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "23a6761a-baae-4fb2-8ba9-74f5e8ac775b",
+          "frames": [
+            {
+              "id": "59c62bef-cf5c-40ab-8fa6-1ce00bac87dd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d9f9e94b-5e35-4f37-8aa6-62c0cd8d6bd6",
+          "frames": [
+            {
+              "id": "a5b214cf-4ed3-4487-afeb-aa874ee3e029",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4872b64e-33d8-4a0a-83af-06c20825c3e5",
+          "frames": [
+            {
+              "id": "9edb09d5-00bc-49ac-8a38-5bf504913068",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "377b05d0-be53-4b42-978c-53402ac83a2a",
+          "frames": [
+            {
+              "id": "97f18ce2-596e-46e0-848a-76062724ff80",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2bbb1970-7907-4e19-b300-4c317df3e008",
+          "frames": [
+            {
+              "id": "87c10e0e-a694-4c96-9961-b3a9e27a495b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b82e6dd3-ce51-48ee-bf9c-9be8de193367",
+          "frames": [
+            {
+              "id": "731e864d-882f-490c-9ced-f3d6d1536c07",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "schluessel.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "2f046792268d360448930201b9ff8890ceb9b6c0"
+}

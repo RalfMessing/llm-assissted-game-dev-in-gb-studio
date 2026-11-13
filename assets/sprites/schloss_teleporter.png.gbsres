@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "74e1da03-ae12-49e8-9815-e05c1bb0fca0",
+  "name": "schloss_teleporter",
+  "symbol": "sprite_schloss_teleporter",
+  "states": [
+    {
+      "id": "8119184b-4664-4d86-946f-001c13c314d9",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "43839fe0-b338-43d5-a6ab-50c531f0fd64",
+          "frames": [
+            {
+              "id": "4bdc391e-28f7-4e0a-b1e4-41284e6a6ca0",
+              "tiles": [
+                {
+                  "id": "400dd200-84e5-456d-ba62-a14da445c2bc",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "2d95eafa-f322-47c8-8413-f7a64c38143a",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbcc5056-c985-40d2-a7a4-a16d9c4565c1",
+          "frames": [
+            {
+              "id": "74586366-39aa-479f-950d-369858fc1dd7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "66eab4a3-6679-4ceb-b37b-f040d41b57f7",
+          "frames": [
+            {
+              "id": "0b6c07da-7d4d-4e6d-9921-124317383fe9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6f4d92ca-1152-4a67-bb67-8c9c8255c7f4",
+          "frames": [
+            {
+              "id": "55f7d63b-dcdb-4501-b9af-1685a232e8a5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d1777c56-b808-4556-a4a5-5a7cad094aa7",
+          "frames": [
+            {
+              "id": "8a92434b-8172-4d0c-a67a-90e650e27bcd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "07b7111f-1baa-4d1c-bb5f-45bebff93148",
+          "frames": [
+            {
+              "id": "f25e22f8-cfdb-44fd-aee1-64be1b22cb3b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f0f514bf-e0fb-4029-83f0-0f1c9a508c58",
+          "frames": [
+            {
+              "id": "c07f0ada-445f-4739-9d85-8cc71d8f6b27",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2e4bdf5f-05ad-4c28-a9f2-8c600554578b",
+          "frames": [
+            {
+              "id": "8cbff951-6380-44de-8f4f-6f639ed00f15",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "schloss_teleporter.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "749a1b01a917a607f2cf15e38a9ba12970440c5f"
+}

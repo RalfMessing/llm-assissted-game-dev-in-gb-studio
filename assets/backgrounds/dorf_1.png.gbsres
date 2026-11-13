@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "4a533f7a-b767-4fc4-ad0c-78e01e5790ab",
+  "name": "dorf_1",
+  "symbol": "bg_dorf_1",
+  "tileColors": "",
+  "filename": "dorf_1.png",
+  "width": 40,
+  "height": 36,
+  "imageWidth": 320,
+  "imageHeight": 288
+}
