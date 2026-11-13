@@ -1,0 +1,70 @@
+{
+  "_resourceType": "script",
+  "id": "af5af86a-a501-4f4b-83b1-e69947b55c50",
+  "name": "Spieler_erwischt",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_3",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Youve got catched.\nBack to the Start."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "28269550-fdd2-4614-8542-a461daaa109e"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6c736e4d-4bef-4371-8dbf-16d2425362cd",
+        "x": {
+          "type": "number",
+          "value": 19
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "5f22ffba-2599-45f6-be13-40cfd5746825"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "a52a54b2-a5ca-4204-97e5-8f1170b52b0a"
+    }
+  ]
+}

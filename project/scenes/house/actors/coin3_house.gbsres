@@ -1,0 +1,61 @@
+{
+  "_resourceType": "actor",
+  "id": "3b29e078-4d06-42a7-8ee8-b8440c6aabde",
+  "name": "Coin3_house",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ed896302-556e-436e-8b87-b1bfd0d2184f",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_3",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "9044c2cf-98f4-4727-860a-1c74f4a7ced6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "786566e4-ab14-4bc9-a253-7e65f1b536f7"
+          }
+        ]
+      },
+      "id": "9083923d-efc4-4599-8509-d9fef471e9de"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 5,
+  "_index": 0
+}

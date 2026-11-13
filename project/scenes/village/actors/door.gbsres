@@ -1,0 +1,77 @@
+{
+  "_resourceType": "actor",
+  "id": "2268ed98-f0b5-4ee2-82f1-93a45567c228",
+  "name": "Door",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "de6a3d90-1f74-4352-82d9-596eaa1644c0",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_6",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "35117c8f-cc6f-4045-9710-c4a05d084142"
+            },
+            "id": "e74b0c31-32df-419b-a3dc-6d096d9fef3a"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "fa883ad0-3a19-4403-9096-4d400d005cbe"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "de6a3d90-1f74-4352-82d9-596eaa1644c0"
+            },
+            "id": "5aa28f99-2fdd-43ab-bc0c-1a1f7be7797a"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6dab67ab-3c5f-4d53-ad0c-79c73f20be08"
+          }
+        ]
+      },
+      "id": "caac9826-6f4c-45e3-81a7-f730bfe71d0b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 6,
+  "y": 9,
+  "_index": 2
+}

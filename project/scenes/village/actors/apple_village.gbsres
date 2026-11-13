@@ -1,0 +1,128 @@
+{
+  "_resourceType": "actor",
+  "id": "1c6be181-0ebb-47c4-a7a3-f5b4b549bb8e",
+  "name": "Apple_village",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2b579ffd-50fe-4c2c-8b0c-a53ccc04b8cd",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_10",
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "11",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "11",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "e12db5f3-0fe8-431f-a41e-f694ebbde694"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "8"
+            },
+            "id": "ad8a4f83-9919-43eb-85ac-54eb2a75b984"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "22ef5213-a369-4b2e-b277-6fdb7ce05932"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Apple collected!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "366a503a-2cd2-4a61-9cd3-819809c49f11"
+          }
+        ]
+      },
+      "id": "bcc62154-5101-424e-8bec-f5b457556720"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "11",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6802e52c-d7ba-4026-83fc-dddce548a2a2"
+          }
+        ],
+        "false": []
+      },
+      "id": "648962b2-0db2-45ea-8259-868ad42e223b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 35,
+  "y": 19,
+  "_index": 5
+}

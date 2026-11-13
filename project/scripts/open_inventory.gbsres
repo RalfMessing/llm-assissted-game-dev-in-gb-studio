@@ -1,0 +1,96 @@
+{
+  "_resourceType": "script",
+  "id": "78566e09-6e77-469b-bf36-8cf677889a64",
+  "name": "Open Inventory",
+  "description": "This is to open the inventory.",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "12"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SET_FONT",
+            "args": {
+              "fontId": "3f4e0eb5-ecf9-473c-8876-cdf9bb52e551"
+            },
+            "id": "209428d2-b555-4302-aa43-d221fd73fcda"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "{ $01$ | $06$\n\n} $08$ ~ $09$ ^ $10$"
+              ],
+              "__section": "behavior",
+              "avatarId": "",
+              "minHeight": 7,
+              "maxHeight": 10,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 1,
+              "speedOut": 1,
+              "closeWhen": "key",
+              "closeButton": "b",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "de7872a7-ffb8-481c-b3fc-7f198512cc9f"
+          },
+          {
+            "command": "EVENT_SET_FONT",
+            "args": {
+              "fontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47"
+            },
+            "id": "4b01e42e-a3fe-43f2-9b9d-86be59cf88b0"
+          }
+        ]
+      },
+      "id": "a350b526-ec14-4910-918e-5b1187393204"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "78566e09-6e77-469b-bf36-8cf677889a64"
+            },
+            "id": "8ece6eb0-94d1-499a-a8e3-90ee8b77a8f0"
+          }
+        ]
+      },
+      "id": "b9c7134c-b977-4de3-832e-3dfb2c7c0c06"
+    }
+  ]
+}

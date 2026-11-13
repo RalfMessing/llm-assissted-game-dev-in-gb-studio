@@ -1,0 +1,61 @@
+{
+  "_resourceType": "actor",
+  "id": "97fb4caa-e014-4cf6-aff6-0ff0d6d057e1",
+  "name": "Coin1_forest",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ed896302-556e-436e-8b87-b1bfd0d2184f",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_4",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "2"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1bbdea26-0ddc-420d-ac9f-fac40d889d6a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c408cd3f-6508-43b4-9ebb-b26aa8d5db82"
+          }
+        ]
+      },
+      "id": "0a654b93-97da-4a02-a9a6-f189d1ce5c4e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 5,
+  "y": 8,
+  "_index": 0
+}

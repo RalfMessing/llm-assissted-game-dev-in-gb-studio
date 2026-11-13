@@ -1,0 +1,147 @@
+{
+  "_resourceType": "actor",
+  "id": "f608c6b4-1350-4edd-99d1-43ac4606eb3f",
+  "name": "Door_Switch",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e29f21f5-c6ea-4a85-a55e-4439fdc5554a",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_7",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "d3185808-68e4-4e42-89c5-e6e35f84fe0b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "e29f21f5-c6ea-4a85-a55e-4439fdc5554a"
+            },
+            "id": "e377b7c7-98dc-4e58-98a9-e2800f3fc6da"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "2268ed98-f0b5-4ee2-82f1-93a45567c228",
+              "spriteSheetId": "de6a3d90-1f74-4352-82d9-596eaa1644c0"
+            },
+            "id": "25804bff-26e2-4bec-af4d-399560ef461d"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "2268ed98-f0b5-4ee2-82f1-93a45567c228"
+            },
+            "id": "92810f4a-c3c1-43f0-a7d8-0a623699a3df"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "48222ed0-e50d-4f5f-9e79-fdc4b751624c"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "11a51adf-368d-4994-a9a1-a7fd8b7e0b26"
+            },
+            "id": "11b3aa53-45d7-481f-b1d0-ce43ea9750cd"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "2268ed98-f0b5-4ee2-82f1-93a45567c228",
+              "spriteSheetId": "35117c8f-cc6f-4045-9710-c4a05d084142"
+            },
+            "id": "30f2c603-cd10-4f9d-a911-5f3ec31cfea8"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "2268ed98-f0b5-4ee2-82f1-93a45567c228"
+            },
+            "id": "a3723066-ade1-4335-8d43-cfa439790ff8"
+          }
+        ]
+      },
+      "id": "4ec1400e-ff2f-4a03-8c02-1f03ad67d4ce"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "f608c6b4-1350-4edd-99d1-43ac4606eb3f",
+              "spriteSheetId": "11a51adf-368d-4994-a9a1-a7fd8b7e0b26"
+            },
+            "id": "2fa98c61-139c-43ad-8626-f11dd1d28974"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "e29f21f5-c6ea-4a85-a55e-4439fdc5554a"
+            },
+            "id": "15a5a5c7-6821-4b07-8685-018be6499d28"
+          }
+        ]
+      },
+      "id": "9151a2c0-3c1a-4c48-a3ce-02f8ee7b2400"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 11,
+  "_index": 3
+}
