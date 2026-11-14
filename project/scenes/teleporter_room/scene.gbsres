@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "5588aae9-21b0-468c-b41e-8ff0404ee9c8",
+  "_index": 7,
+  "name": "Teleporter Room",
+  "backgroundId": "b340b9a2-2865-4e05-91c0-148846a693c8",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "003d+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f12+0029+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_8",
+  "x": 229,
+  "y": 588,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

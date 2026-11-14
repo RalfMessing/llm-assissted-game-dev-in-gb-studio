@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "04df3a03-49fa-40f7-9d58-dc736c0ad5bf",
+  "name": "Teleporter To Sample Town",
+  "prefabId": "",
+  "x": 8,
+  "y": 12,
+  "symbol": "trigger_19",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 36
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "1a629253-0bfe-4fd6-a6bd-bb38f5ac5007"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

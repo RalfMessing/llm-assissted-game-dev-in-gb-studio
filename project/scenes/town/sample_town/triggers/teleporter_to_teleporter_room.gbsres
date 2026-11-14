@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "b93acaf5-5afc-4715-b036-7716c0c86c47",
+  "name": "Teleporter To Teleporter Room",
+  "prefabId": "",
+  "x": 9,
+  "y": 32,
+  "symbol": "trigger_18",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "5588aae9-21b0-468c-b41e-8ff0404ee9c8",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "97765726-ac9e-453c-9c5b-25f1872edd98"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 14
+}
