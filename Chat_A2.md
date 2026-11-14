@@ -125,7 +125,8 @@ If you used the fallback, whether any flicker was visible.
 The result of the A2.2 / A2.7 retest, plus any build warnings.
 
 ## 3rd Iteration
-I cannot carry out step 4.3.2: Face Interaction option does not exist in GB Studio 22.3.27. I followed your instructions.
+I cannot carry out step 4.3.2: Face Interaction option does not exist in GB Studio 22.3.27.
+I followed your instructions.
 The build succeeded. Test result:
 
 Works as expected:

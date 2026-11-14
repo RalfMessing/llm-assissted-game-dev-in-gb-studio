@@ -170,6 +170,91 @@
       "id": "e9cd48b8-2ad2-4563-9f71-e376ad7c8553__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
+    },
+    {
+      "id": "21",
+      "name": "Enemy Pos X",
+      "symbol": "var_enemy_pos_x"
+    },
+    {
+      "id": "22",
+      "name": "Enemy Pos Y",
+      "symbol": "var_enemy_pos_y"
+    },
+    {
+      "id": "23",
+      "name": "Player Pos X",
+      "symbol": "var_player_pos_x"
+    },
+    {
+      "id": "24",
+      "name": "Player Pos Y",
+      "symbol": "var_player_pos_y"
+    },
+    {
+      "id": "25",
+      "name": "Enemy Abs DX",
+      "symbol": "var_enemy_abs_dx"
+    },
+    {
+      "id": "26",
+      "name": "Enemy Abs DY",
+      "symbol": "var_enemy_abs_dy"
+    },
+    {
+      "id": "27",
+      "name": "Enemy Distance",
+      "symbol": "var_enemy_distance"
+    },
+    {
+      "id": "28",
+      "name": "Enemy Sign X",
+      "symbol": "var_enemy_sign_x"
+    },
+    {
+      "id": "29",
+      "name": "Enemy Sign Y",
+      "symbol": "var_enemy_sign_y"
+    },
+    {
+      "id": "30",
+      "name": "Enemy Target X",
+      "symbol": "var_enemy_target_x"
+    },
+    {
+      "id": "31",
+      "name": "Enemy Target Y",
+      "symbol": "var_enemy_target_y"
+    },
+    {
+      "id": "32",
+      "name": "Enemy Previous X",
+      "symbol": "var_enemy_previous_x"
+    },
+    {
+      "id": "33",
+      "name": "Enemy Previous Y",
+      "symbol": "var_enemy_previous_y"
+    },
+    {
+      "id": "34",
+      "name": "Enemy Patrol Direction",
+      "symbol": "var_enemy_patrol_direction"
+    },
+    {
+      "id": "35",
+      "name": "Enemy Patrol Steps",
+      "symbol": "var_enemy_patrol_steps"
+    },
+    {
+      "id": "36",
+      "name": "Enemy Is Chasing",
+      "symbol": "var_enemy_is_chasing"
+    },
+    {
+      "id": "37",
+      "name": "Enemy Blocked",
+      "symbol": "var_enemy_blocked"
     }
   ],
   "constants": []
