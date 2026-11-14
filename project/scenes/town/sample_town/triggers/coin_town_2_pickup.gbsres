@@ -1,0 +1,57 @@
+{
+  "_resourceType": "trigger",
+  "id": "60678254-2e7a-40c2-9d0d-ffc0d4f1fd60",
+  "name": "Coin Town 2 Pickup",
+  "prefabId": "",
+  "x": 4,
+  "y": 21,
+  "symbol": "trigger_19",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "23"
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "23",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": false
+            },
+            "id": "08abc774-8353-4b2b-a85c-1e52e730566c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9f4ca622-301a-4b58-874a-95d15915ce32",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "23"
+              },
+              "$actor[0]$": "fa563fbf-4a05-44c7-ba79-35a903e0cdfc",
+              "__collapse": false
+            },
+            "id": "0922e8b9-3b00-4995-9326-c8683a2cf778"
+          }
+        ]
+      },
+      "id": "5b3f6649-cadf-4432-988e-7a974abc6030"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 15
+}

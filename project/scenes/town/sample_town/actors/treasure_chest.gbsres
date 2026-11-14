@@ -53,7 +53,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "The chest has been opened!"
+                "Coin found!"
               ],
               "__section": "text",
               "avatarId": "",
@@ -73,6 +73,13 @@
               "closeDelayFrames": 30
             },
             "id": "e4413520-a287-445d-8807-a0ecdb23df79"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "21"
+            },
+            "id": "bfcc7f01-3bf3-4981-9164-c9fe8c7946ed"
           }
         ]
       },

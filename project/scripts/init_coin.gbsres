@@ -1,0 +1,53 @@
+{
+  "_resourceType": "script",
+  "id": "89656e87-9c26-4e47-9523-f4bc1758bd56",
+  "name": "init coin",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Coin Flag",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Coin"
+    }
+  },
+  "symbol": "script_3",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "0"
+      },
+      "id": "2a7796db-048f-483d-866d-8ed53f48172a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            },
+            "id": "ef8248ed-20e8-40ae-8bf2-139fff424a5f"
+          }
+        ],
+        "false": []
+      },
+      "id": "00b0e760-a43b-4379-b2c8-a3dfe789c90b"
+    }
+  ]
+}

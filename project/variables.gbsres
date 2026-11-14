@@ -107,6 +107,26 @@
       "symbol": "var_chest_town_opened"
     },
     {
+      "id": "21",
+      "name": "Coin Counter",
+      "symbol": "var_coin_counter"
+    },
+    {
+      "id": "22",
+      "name": "Coin Town 1 collected",
+      "symbol": "var_coin_town_1_collected"
+    },
+    {
+      "id": "23",
+      "name": "Coin Town 2 collected",
+      "symbol": "var_coin_town_2_collected"
+    },
+    {
+      "id": "24",
+      "name": "Coin Town 3 collected",
+      "symbol": "var_coin_town_3_collected"
+    },
+    {
       "id": "871ea302-1cc1-463c-b9d7-530aac38fe81__L0",
       "name": "Spoken to gardener",
       "symbol": "var_spoken_to_gardener"
