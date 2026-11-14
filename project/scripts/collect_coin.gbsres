@@ -1,0 +1,64 @@
+{
+  "_resourceType": "script",
+  "id": "9f4ca622-301a-4b58-874a-95d15915ce32",
+  "name": "collect coin",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Coin Flag",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Coin"
+    }
+  },
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0",
+        "__collapse": true
+      },
+      "id": "660b432b-3eaa-4e9c-80ce-a73de7692fbb"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "21",
+        "__collapse": true
+      },
+      "id": "433442ea-d0c7-4f13-a3f0-bb6f820c17fe"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Coins: $21$"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "aaa63648-04bd-40ce-8140-600fce149608"
+    }
+  ]
+}

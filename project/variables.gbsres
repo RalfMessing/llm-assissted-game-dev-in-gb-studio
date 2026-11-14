@@ -108,86 +108,106 @@
     },
     {
       "id": "21",
+      "name": "Coin Counter",
+      "symbol": "var_coin_counter"
+    },
+    {
+      "id": "22",
+      "name": "Coin Town 1 collected",
+      "symbol": "var_coin_town_1_collected"
+    },
+    {
+      "id": "23",
+      "name": "Coin Town 2 collected",
+      "symbol": "var_coin_town_2_collected"
+    },
+    {
+      "id": "24",
+      "name": "Coin Town 3 collected",
+      "symbol": "var_coin_town_3_collected"
+    },
+    {
+      "id": "25",
       "name": "Enemy Pos X",
       "symbol": "var_enemy_pos_x"
     },
     {
-      "id": "22",
+      "id": "26",
       "name": "Enemy Pos Y",
       "symbol": "var_enemy_pos_y"
     },
     {
-      "id": "23",
+      "id": "27",
       "name": "Player Pos X",
       "symbol": "var_player_pos_x"
     },
     {
-      "id": "24",
+      "id": "28",
       "name": "Player Pos Y",
       "symbol": "var_player_pos_y"
     },
     {
-      "id": "25",
+      "id": "29",
       "name": "Enemy Abs DX",
       "symbol": "var_enemy_abs_dx"
     },
     {
-      "id": "26",
+      "id": "30",
       "name": "Enemy Abs DY",
       "symbol": "var_enemy_abs_dy"
     },
     {
-      "id": "27",
+      "id": "31",
       "name": "Enemy Distance",
       "symbol": "var_enemy_distance"
     },
     {
-      "id": "28",
+      "id": "32",
       "name": "Enemy Sign X",
       "symbol": "var_enemy_sign_x"
     },
     {
-      "id": "29",
+      "id": "33",
       "name": "Enemy Sign Y",
       "symbol": "var_enemy_sign_y"
     },
     {
-      "id": "30",
+      "id": "34",
       "name": "Enemy Target X",
       "symbol": "var_enemy_target_x"
     },
     {
-      "id": "31",
+      "id": "35",
       "name": "Enemy Target Y",
       "symbol": "var_enemy_target_y"
     },
     {
-      "id": "32",
+      "id": "36",
       "name": "Enemy Previous X",
       "symbol": "var_enemy_previous_x"
     },
     {
-      "id": "33",
+      "id": "37",
       "name": "Enemy Previous Y",
       "symbol": "var_enemy_previous_y"
     },
     {
-      "id": "34",
+      "id": "38",
       "name": "Enemy Patrol Direction",
       "symbol": "var_enemy_patrol_direction"
     },
     {
-      "id": "35",
+      "id": "39",
       "name": "Enemy Patrol Steps",
       "symbol": "var_enemy_patrol_steps"
     },
     {
-      "id": "36",
+      "id": "40",
       "name": "Enemy Is Chasing",
       "symbol": "var_enemy_is_chasing"
     },
     {
-      "id": "37",
+      "id": "41",
       "name": "Enemy Blocked",
       "symbol": "var_enemy_blocked"
     },
