@@ -1,0 +1,160 @@
+{
+  "_resourceType": "script",
+  "id": "b1350b77-08fa-5480-be4c-f157e6d2f841",
+  "name": "interaction/Talk Elder",
+  "symbol": "script_talk_elder",
+  "description": "Dialog mit dem Dorfaeltesten. Actor-Parameter 'Elder' = sprechende Figur.",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Elder"
+    }
+  },
+  "script": [
+    {
+      "id": "1266c7e3-9eec-506f-a073-a60c9b98b26f",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "49be517b-2b9d-54a4-bc9a-5f0ba711db0e",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "0",
+              "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2"
+            }
+          },
+          {
+            "id": "39f671a5-c3cf-5664-8aa2-a1b74e5b5e43",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Schoen, dich\nwiederzusehen!\n$05$"
+              ],
+              "avatarId": "",
+              "minHeight": 5,
+              "maxHeight": 7,
+              "position": "bottom",
+              "showFrame": "true",
+              "clearPrevious": true,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "__section": "layout"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "abad238d-ee25-53c7-8170-68edabea5648",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "0",
+              "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+            }
+          },
+          {
+            "id": "86befd1a-c99e-5425-a12e-916e98ca87c4",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Willkommen in\nLindenau,\nWanderer!",
+                "Ich bin der\nDorfaelteste."
+              ],
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "position": "bottom",
+              "showFrame": "true",
+              "clearPrevious": true,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "closeWhen": "key",
+              "closeButton": "a"
+            }
+          },
+          {
+            "id": "72370077-4e88-53a3-871e-cb37db981467",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "1"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "357a43f3-a471-59e8-9b66-b7dc5abad771",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Du hast den\nWegweiser im Wald\ngelesen? Gut so!\n$05$"
+                    ],
+                    "avatarId": "",
+                    "minHeight": 7,
+                    "maxHeight": 7,
+                    "position": "bottom",
+                    "showFrame": "true",
+                    "clearPrevious": true,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "__section": "text"
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "b0b4dfc8-5b9a-50d0-a56c-1b097f280eb4",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Im Wald steht ein\nWegweiser. Lies\nihn ruhig mal!\n$05$"
+                    ],
+                    "avatarId": "",
+                    "minHeight": 6,
+                    "maxHeight": 7,
+                    "position": "bottom",
+                    "showFrame": "true",
+                    "clearPrevious": true,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "__section": "text"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "22a066f6-0dc7-541b-9ab7-b91e9a1475a0",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "true"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

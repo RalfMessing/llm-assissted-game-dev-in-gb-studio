@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "91206037-0bb2-558a-9d6a-8b0a66f97c79",
+  "_index": 0,
+  "symbol": "actor_forest_sign",
+  "prefabId": "",
+  "name": "Forest Sign",
+  "coordinateType": "tiles",
+  "x": 6,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2746e2c5-735d-5702-a511-6ef1f604479b",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "5d6154ee-e235-5a06-a1b3-1009ee0dcc25",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "05bc9760-7a55-5cf7-a04e-936c0b6d548a",
+        "__name": "Read Forest Sign"
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

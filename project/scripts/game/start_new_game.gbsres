@@ -1,0 +1,230 @@
+{
+  "_resourceType": "script",
+  "id": "48d11a81-57df-5db2-be8d-c2d5e0e78b9c",
+  "name": "game/Start New Game",
+  "symbol": "script_start_new_game",
+  "description": "Setzt alle Spielfortschritts-Variablen zurueck und startet im Wald.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "5e05dad0-d444-5e20-8a75-b6505fd7ab53",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Fortschritt zuruecksetzen",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "6c28330d-f01b-5c5e-9de3-5631a5802b77",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "30f80053-b447-56db-a5de-adc3ca169230",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "91dc004f-3903-5225-86ec-1ea652f79b49",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "f683307e-7a63-5471-ac51-2de59edad9ac",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "4",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "778f38d0-6b20-5eda-8c11-6b3394b57489",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "366c9f7b-0a27-5871-94c0-bd4e2dd53c95",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "9b72903e-c44c-5ce3-b485-54e7dcf35a90",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "6c64e118-18f5-5b59-8264-5562aa7c4a93",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "126a651f-e3dd-59e0-b9a4-e6104c13530f",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A5.1: Schalter aus (Tuer zu); A5R: Schluessel liegt (Haustuer zu)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "daa93bf4-5e3e-5f06-8c88-0952d353b074",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "9",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "ade1e030-f792-5159-95cf-c25799923145",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "ea3351df-714e-5705-ba21-539caa4d84d1",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A6.2: Inventar-Anfangsbestaende = 0 (Pilze, Aepfel, Kristalle + Sperren)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "7d195d16-6439-5fb9-9d28-4649279a8a4b",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "11",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "a9e7850b-e27b-5d01-bafe-68abfab1d010",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "db1ad72d-f5d6-5ded-a952-152e47c3f28e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "13",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "baeb2f0b-f745-5094-be02-2c6f820abd16",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "ecd00f47-8e8a-50a9-8aca-f59cf708f152",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "15",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "e8615850-f659-5594-9a09-2251bee8826d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "16",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "6ed15ee1-7ea1-5b03-ba06-7a5149fc83e2",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "17",
+        "value": {
+          "type": "false"
+        }
+      }
+    },
+    {
+      "id": "e76a19a5-1915-526e-aa37-a12c2f5e03ea",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Spielstart: Waldszene, Spieler links auf dem Weg",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "b750298b-28cc-5834-8b3e-5e8aceafaa7c",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "122a941e-debd-5898-8a48-57bcb484b44b",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

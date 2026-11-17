@@ -1,0 +1,32 @@
+{
+  "_resourceType": "script",
+  "id": "aac0336e-03d9-54d1-b2b8-aa11e309b177",
+  "name": "doors/Locked Workshop Door",
+  "symbol": "script_locked_workshop_door",
+  "description": "A5.2: A-Knopf an der verschlossenen Werkstatt-Tuer. Nur Hinweistext; der Actor selbst blockiert den Spieler.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "e0b74680-cfa0-5fca-a7a9-f0d5fa0f692a",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Die Tür ist\nverschlossen.",
+          "Irgendwo muss\nein Schalter\nsein ..."
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    }
+  ]
+}

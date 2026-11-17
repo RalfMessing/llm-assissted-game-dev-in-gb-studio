@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "d52a71f4-23ac-5bd4-ba43-c6e2fe2d9f75",
+  "_index": 7,
+  "symbol": "actor_slime",
+  "prefabId": "",
+  "name": "Slime",
+  "coordinateType": "tiles",
+  "x": 8,
+  "y": 14,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0880cc1c-25ec-50d2-b12a-577881534262",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "5d81fdaa-dace-5fa1-9df4-92cd087f5a93",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d28e0ea5-7adb-5cb3-9359-e78d0f50875d",
+        "__name": "Enemy Catch Player",
+        "$actor[0]$": "d52a71f4-23ac-5bd4-ba43-c6e2fe2d9f75"
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "9cadf92e-9197-57c3-a67f-e69def3f33ac",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "e5e32d44-37f2-5986-99c3-bcdbbb7f69c5",
+        "__name": "Enemy AI",
+        "$actor[0]$": "d52a71f4-23ac-5bd4-ba43-c6e2fe2d9f75",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 8
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 14
+        }
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

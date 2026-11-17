@@ -1,0 +1,87 @@
+{
+  "_resourceType": "script",
+  "id": "d28e0ea5-7adb-5cb3-9359-e78d0f50875d",
+  "name": "enemy/Enemy Catch Player",
+  "symbol": "script_enemy_catch_player",
+  "description": "A7.7: 'On Hit: Player' des Gegners (Kollisionsgruppe 1 -> Felder ueberlappen bzw. Spieler laeuft hinein). Spiel anhalten, Nachricht zeigen, Gegner entfernen, zurueck zum Titelbildschirm (Startmenue) -> 'Start Game' setzt den Spielstand zurueck. Parameter: Actor 'Enemy'.",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Enemy"
+    }
+  },
+  "script": [
+    {
+      "id": "0e0ea8f0-bd10-5565-85c4-b3750faaeb16",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Alles anhalten (Gegner-KI, Spieler, Knopf-Scripts)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "1e6b55d2-485e-5fe8-bc4c-d0082ab140c5",
+      "command": "EVENT_SCRIPT_LOCK",
+      "args": {}
+    },
+    {
+      "id": "908051d7-3751-5604-8a1f-3a4d5652bdbe",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Der Schleim hat\ndich erwischt!",
+          "Zurück zum\nTitelbildschirm."
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    },
+    {
+      "id": "4fd32466-6617-5e93-9dfe-bc9f5bde8f13",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "0"
+      }
+    },
+    {
+      "id": "4b0444cc-24ad-50e1-bdf4-fe91a2f2edac",
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {}
+    },
+    {
+      "id": "b4ce8bab-60fc-566b-ad60-897ff0696d58",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A7.7: ins Startmenue -> Neustart noetig",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "d6d6548d-403b-5675-be18-0d17c236a233",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3e8ab6e9-827e-5acc-9fb0-256d96ed19a3",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

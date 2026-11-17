@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "143e1d94-b52e-5a7a-a8ed-c2f9beb5ebda",
+  "_index": 0,
+  "symbol": "trigger_exit_workshop",
+  "prefabId": "",
+  "name": "Exit Workshop",
+  "x": 9,
+  "y": 17,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "ab6da236-aeb9-5c8d-9396-afa2a339c286",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "08f28bd7-36fd-5e54-af20-ba5405bf91ce",
+        "__name": "Warp Workshop To Village"
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,39 @@
+{
+  "_resourceType": "script",
+  "id": "2d55df1c-5705-5c95-bb38-c7ae9b35135e",
+  "name": "interaction/Talk Guard",
+  "symbol": "script_talk_guard",
+  "description": "A2: Waechter am Dorfeingang (A-Knopf). Zeigt immer denselben Text, beliebig oft wiederholbar. Keine Bewegung, keine Drehung, keine Variablen. Der Spieler ist waehrend der Textbox gesperrt.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "e8d4dfbf-5352-5e51-9246-ef666cb6a823",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A2: Kein 'Actor Face Towards' -> Waechter dreht sich nie (A2.7)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "71fc229a-a5cc-518d-abff-af97c7c9870e",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Willkommen in\nunserem Dorf."
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "_resourceType": "actor",
+  "id": "abbd4592-4408-5e3c-8557-8b8aedc87b8f",
+  "_index": 1,
+  "symbol": "actor_treasure_chest",
+  "prefabId": "",
+  "name": "Treasure Chest",
+  "coordinateType": "tiles",
+  "x": 11,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "97803f9a-1ae2-5d72-b812-4d9c0cd69764",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "8ed0dea0-199a-5e34-b673-42aab975a82b",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "47856f46-c378-52ff-9db1-e0dc41ccf56b",
+        "__name": "Open Treasure Chest",
+        "$actor[0]$": "abbd4592-4408-5e3c-8557-8b8aedc87b8f"
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "84dffa6b-d622-5242-bd7d-4fb82417d7a2",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f671f337-df5f-5997-a199-fe51f65c25be",
+        "__name": "Treasure Chest Init",
+        "$actor[0]$": "abbd4592-4408-5e3c-8557-8b8aedc87b8f"
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

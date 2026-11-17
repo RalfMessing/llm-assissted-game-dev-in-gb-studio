@@ -1,0 +1,111 @@
+{
+  "_resourceType": "script",
+  "id": "47856f46-c378-52ff-9db1-e0dc41ccf56b",
+  "name": "interaction/Open Treasure Chest",
+  "symbol": "script_open_treasure_chest",
+  "description": "A1: Truhe oeffnen (A-Knopf). Nur einmal: Variable ChestOpened wird ZUERST gesetzt, dann Sprite-Zustand 'Open', dann CoinCount +1 (A3R), dann Nachricht 'Muenze gefunden!'. Ist die Truhe offen, passiert nichts. Actor-Parameter 'Chest' = die Truhe.",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Chest"
+    }
+  },
+  "script": [
+    {
+      "id": "ef69689a-1dd0-5c1d-8ca4-21da15a325e4",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f8a8ac81-7715-5caf-8c61-52a671218fbb",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Bereits geoeffnet: nichts tun (A1.5)",
+              "__collapse": false
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "259bef09-cccd-5759-a56b-dd058e426fa2",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Sperre gegen Doppel-Oeffnen (A1.4)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "213fa608-0c44-5860-bb49-42a739ef0936",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "d1a2975f-ab2d-5efd-84db-04b6c32d922b",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Sprite sofort auf Zustand 'Open' (A1.3)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "40951977-7f6d-5b74-8c34-1c0cb01c99b9",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Open",
+              "loopAnim": true
+            }
+          },
+          {
+            "id": "cdc2cc41-d4d6-5dfc-8af4-e9fc17e3a938",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "A3R.1: derselbe Muenzzaehler (CoinCount) +1",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "5fad8d93-5819-5799-a66e-c0755d9bc61b",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          },
+          {
+            "id": "97fe5214-e437-5696-82f8-abbdda218cff",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Münze gefunden!"
+              ],
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "position": "bottom",
+              "showFrame": "true",
+              "clearPrevious": true,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "closeWhen": "key",
+              "closeButton": "a"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

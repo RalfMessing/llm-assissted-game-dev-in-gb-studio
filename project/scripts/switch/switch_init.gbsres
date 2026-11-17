@@ -1,0 +1,57 @@
+{
+  "_resourceType": "script",
+  "id": "393bdd13-83d1-5483-80f5-989c7a63dc25",
+  "name": "switch/Switch Init",
+  "symbol": "script_switch_init",
+  "description": "A5.1/A5.7: Beim Laden der Szene das Aussehen des Schalters aus der Variable 'On' wiederherstellen. Parameter: Actor 'Switch' = Schalter, Variable 'On' = SwitchOn.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "On",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Switch"
+    }
+  },
+  "script": [
+    {
+      "id": "763af5fd-030e-589e-90e6-4da01f1af6a4",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "a1cd1e0e-929a-5ea4-8784-c4d137c631e6",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "On",
+              "loopAnim": true
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "a336c909-ad85-52e2-9fa9-4fc6752806b4",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "",
+              "loopAnim": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

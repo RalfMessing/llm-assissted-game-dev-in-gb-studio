@@ -1,0 +1,52 @@
+{
+  "_resourceType": "actor",
+  "id": "34ea68f1-5d34-5be2-b1a5-99a08c495f5c",
+  "_index": 4,
+  "symbol": "actor_house_door",
+  "prefabId": "",
+  "name": "House Door",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bb0965a2-5882-520e-bbfe-e46fc4728cac",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "b25aa7f1-3d32-5b77-a2b5-e641cd36e98c",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "31d0e21e-c029-53ff-a42d-26e3677edf72",
+        "__name": "Locked House Door"
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "94f24168-3182-5ce2-8b61-bf29b6de026f",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f6991ed6-c038-59ed-97db-12dd52a93aa4",
+        "__name": "Door Init",
+        "$actor[0]$": "34ea68f1-5d34-5be2-b1a5-99a08c495f5c",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "10"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

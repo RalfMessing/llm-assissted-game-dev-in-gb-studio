@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "8ff7d141-6028-5b37-8170-28ab40711751",
+  "_index": 0,
+  "symbol": "trigger_to_forest",
+  "prefabId": "",
+  "name": "To Forest",
+  "x": 0,
+  "y": 8,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "52a9867c-dc69-5487-8c97-098e48949cf0",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "4c3957c0-f444-5aa4-8be0-df660dca7145",
+        "__name": "Warp To Forest"
+      }
+    }
+  ],
+  "leaveScript": []
+}

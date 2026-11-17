@@ -1,0 +1,28 @@
+{
+  "_resourceType": "script",
+  "id": "4c3957c0-f444-5aa4-8be0-df660dca7145",
+  "name": "world/Warp To Forest",
+  "symbol": "script_warp_to_forest",
+  "description": "Uebergang Dorf -> Wald (Spieler erscheint am rechten Waldausgang).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "2c7fb9ce-dd38-5b83-b78d-b1712ebd67bd",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "122a941e-debd-5898-8a48-57bcb484b44b",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "left",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

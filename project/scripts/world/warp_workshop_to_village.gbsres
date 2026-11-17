@@ -1,0 +1,36 @@
+{
+  "_resourceType": "script",
+  "id": "08f28bd7-36fd-5e54-af20-ba5405bf91ce",
+  "name": "world/Warp Workshop To Village",
+  "symbol": "script_warp_workshop_to_vil",
+  "description": "A5.6: Rueckweg Werkstatt -> Dorf. Ausloeser: Trigger 'Exit Workshop' auf der Fussmatte. Spieler erscheint vor der Werkstatt (nicht auf dem Tuer-Trigger).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "0499d346-8a31-5845-a6eb-7d9a10a06902",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A5.6: Ankunft (12, 7), Blick down; Tuer-Trigger liegt bei y = 5",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "077d6eeb-e737-5384-ba81-4a13b960abfc",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f6776942-ec21-5206-bf77-64d3ac088c26",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

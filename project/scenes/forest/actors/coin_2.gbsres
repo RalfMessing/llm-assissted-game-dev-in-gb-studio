@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "40a7e362-458b-5386-943e-fd20fa8ea1a3",
+  "_index": 3,
+  "symbol": "actor_coin_2",
+  "prefabId": "",
+  "name": "Coin 2",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "93690608-d126-5247-87d4-ca093bbc40f2",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "03923cde-7c20-5d40-bb38-79b7c0a10e6f",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ee3b37c5-58e1-5176-9002-6b2077719b89",
+        "__name": "Collect Coin",
+        "$actor[0]$": "40a7e362-458b-5386-943e-fd20fa8ea1a3",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "7"
+        }
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "f66d98a1-e6c6-506c-bdf5-f5a67640869e",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f5834980-02a5-56bb-80ae-5af18aa41530",
+        "__name": "Coin Init",
+        "$actor[0]$": "40a7e362-458b-5386-943e-fd20fa8ea1a3",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "7"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

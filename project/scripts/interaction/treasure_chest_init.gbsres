@@ -1,0 +1,51 @@
+{
+  "_resourceType": "script",
+  "id": "f671f337-df5f-5997-a199-fe51f65c25be",
+  "name": "interaction/Treasure Chest Init",
+  "symbol": "script_treasure_chest_init",
+  "description": "A1: Beim Laden der Szene das Aussehen der Truhe aus ChestOpened wiederherstellen (A1.6). Actor-Parameter 'Chest' = die Truhe.",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Chest"
+    }
+  },
+  "script": [
+    {
+      "id": "dc5398e7-9898-5238-91a4-b7a5f2e2bef7",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "4"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "f738c6d9-118c-56e9-85a4-1f4c4dbacfcc",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "Open",
+              "loopAnim": true
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "8a844a32-8ae1-5f23-a4c8-dfd2188359f1",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "",
+              "loopAnim": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

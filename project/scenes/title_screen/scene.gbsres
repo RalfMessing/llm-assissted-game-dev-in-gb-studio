@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "3e8ab6e9-827e-5acc-9fb0-256d96ed19a3",
+  "_index": 0,
+  "type": "TOPDOWN",
+  "name": "Title Screen",
+  "symbol": "scene_title_screen",
+  "x": 60,
+  "y": 60,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "12c582b5-62ea-5d17-ac36-bc7012656911",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "a541322a-7b69-5ee2-bb74-7a1cf0e63290",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "81416521-a940-578c-9664-10544a019f74",
+        "__name": "Title Menu"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,111 @@
+{
+  "_resourceType": "settings",
+  "startSceneId": "3e8ab6e9-827e-5acc-9fb0-256d96ed19a3",
+  "startX": 9,
+  "startY": 9,
+  "startMoveSpeed": 1,
+  "startAnimSpeed": 15,
+  "startDirection": "down",
+  "showCollisionExtraTiles": false,
+  "showCollisionTileValues": false,
+  "collisionLayerOpacity": 50,
+  "sgbEnabled": false,
+  "customHead": "",
+  "defaultBackgroundPaletteIds": [
+    "default-bg-1",
+    "default-bg-2",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "dmg",
+    "default-ui"
+  ],
+  "defaultSpritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "defaultSpritePaletteId": "default-sprite",
+  "defaultUIPaletteId": "default-ui",
+  "playerPaletteId": "",
+  "defaultMonoBGP": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "defaultMonoOBP0": [
+    0,
+    1,
+    3
+  ],
+  "defaultMonoOBP1": [
+    0,
+    2,
+    3
+  ],
+  "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
+  "defaultCharacterEncoding": "",
+  "defaultPlayerSprites": {
+    "TOPDOWN": "37b3d6d3-ec1c-5296-ae6a-b4216e293188",
+    "PLATFORM": "37b3d6d3-ec1c-5296-ae6a-b4216e293188",
+    "ADVENTURE": "37b3d6d3-ec1c-5296-ae6a-b4216e293188",
+    "SHMUP": "37b3d6d3-ec1c-5296-ae6a-b4216e293188",
+    "POINTNCLICK": "37b3d6d3-ec1c-5296-ae6a-b4216e293188",
+    "LOGO": "37b3d6d3-ec1c-5296-ae6a-b4216e293188"
+  },
+  "musicDriver": "huge",
+  "cartType": "mbc5",
+  "batterylessEnabled": false,
+  "customColorsWhite": "E8F8E0",
+  "customColorsLight": "B0F088",
+  "customColorsDark": "509878",
+  "customColorsBlack": "202850",
+  "customControlsUp": [
+    "ArrowUp"
+  ],
+  "customControlsDown": [
+    "ArrowDown"
+  ],
+  "customControlsLeft": [
+    "ArrowLeft"
+  ],
+  "customControlsRight": [
+    "ArrowRight"
+  ],
+  "customControlsA": [
+    "a",
+    "A"
+  ],
+  "customControlsB": [
+    "b",
+    "B"
+  ],
+  "customControlsStart": [
+    "Enter"
+  ],
+  "customControlsSelect": [
+    "Shift"
+  ],
+  "colorMode": "mono",
+  "colorCorrection": "default",
+  "generateDebugFilesEnabled": false,
+  "compilerPreset": 3000,
+  "scriptEventPresets": {},
+  "scriptEventDefaultPresets": {},
+  "runSceneSelectionOnly": false,
+  "spriteMode": "8x16",
+  "openBuildFolderOnExport": true,
+  "showRomUsageAfterBuild": true,
+  "romFilename": "",
+  "defaultSceneTypeId": "TOPDOWN",
+  "disabledSceneTypeIds": [],
+  "autoTileFlipEnabled": true,
+  "webTemplate": ""
+}

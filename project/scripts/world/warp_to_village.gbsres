@@ -1,0 +1,38 @@
+{
+  "_resourceType": "script",
+  "id": "88bf627c-9772-599a-97de-e9707897f1fe",
+  "name": "world/Warp To Village",
+  "symbol": "script_warp_to_village",
+  "description": "Uebergang Wald -> Dorf (Spieler erscheint am linken Dorfeingang).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "feb13e29-926c-54ea-9b59-69be506d2e96",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "true"
+        }
+      }
+    },
+    {
+      "id": "b3d6b12e-c968-5417-bbe6-fdeedc0b8096",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f6776942-ec21-5206-bf77-64d3ac088c26",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

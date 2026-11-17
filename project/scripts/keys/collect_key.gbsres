@@ -1,0 +1,80 @@
+{
+  "_resourceType": "script",
+  "id": "07c476d2-3a4f-5279-81ac-6201a9101720",
+  "name": "keys/Collect Key",
+  "symbol": "script_collect_key",
+  "description": "A5R.1: Wie 'Collect Coin' (On Hit: Player, Kollisionsgruppe 1), aber OHNE Muenzzaehler. Zaehlt nur, wenn 'Taken' noch 0 ist: Taken=1, Schluessel deaktivieren (verschwindet sofort). A5R.3: Der Schluessel wird NICHT verbraucht; Taken=1 bedeutet dauerhaft 'Haustuer offen'. Parameter: Actor 'Key' = Schluessel, Variable 'Taken' = KeyTaken.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Taken",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Key"
+    }
+  },
+  "script": [
+    {
+      "id": "7d8681a7-d5e1-5e59-bda8-9305d1f316d2",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9f437fe6-ad36-5a23-b914-cb0e5b3b40c8",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Schon eingesammelt: nichts tun (kein Doppelzaehlen)",
+              "__collapse": false
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "39df9f92-547f-5185-b0cd-48e5cddbc0bf",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Sperre zuerst setzen -> nur einmal einsammelbar",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "a7ce4343-cb33-5be2-8f8b-eff9a9e719ef",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "84fe7ca0-aedb-5e4c-ae83-4cec2c7897d6",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Schluessel sofort entfernen",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "0699b3ad-4958-5097-852b-4273ac6133b3",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

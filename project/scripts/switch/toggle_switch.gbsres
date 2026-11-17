@@ -1,0 +1,111 @@
+{
+  "_resourceType": "script",
+  "id": "26962bb1-ec61-5860-9135-5680cd3de5cb",
+  "name": "switch/Toggle Switch",
+  "symbol": "script_toggle_switch",
+  "description": "A5.3/A5.4/A5.5: Schalter per A-Knopf umlegen. Die Variable 'On' ist die EINZIGE Wahrheitsquelle: sie wird zuerst gesetzt, danach werden Schalter-Sprite und Tuer im selben Durchlauf daraus abgeleitet (nie widerspruechlich). AN: Zustand 'On' + Tuer-Actor deaktivieren (Tuer offen, Trigger erreichbar). AUS: Zustand '' + Tuer-Actor aktivieren (Tuer zu, blockiert). Parameter: Actor 'Switch' = Schalter, Actor 'Door' = Tuer, Variable 'On' = SwitchOn.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "On",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Switch"
+    },
+    "1": {
+      "id": "1",
+      "name": "Door"
+    }
+  },
+  "script": [
+    {
+      "id": "5ad8f7b5-1bf0-5208-b7c5-b540d180e102",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "b9b9c51a-55d0-5d21-9f1e-30316fa70008",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "A5.4: AN -> AUS: Tuer sofort schliessen",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "54e7891e-0bab-5c37-ae2e-8c12df96a9ec",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "false"
+              }
+            }
+          },
+          {
+            "id": "d44a1c5e-a051-5842-b813-fbbee4626207",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "",
+              "loopAnim": true
+            }
+          },
+          {
+            "id": "4c3a9486-9c79-5775-9e9d-907b53198713",
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "1"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "72a76cfa-50eb-501c-af6c-7f583d326189",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "A5.3: AUS -> AN: Tuer sofort oeffnen",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "baaf3125-51bf-5437-8a3b-5e21d43b205b",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "bdb559cc-f128-537b-8a74-f0426d896359",
+            "command": "EVENT_ACTOR_SET_STATE",
+            "args": {
+              "actorId": "0",
+              "spriteStateId": "On",
+              "loopAnim": true
+            }
+          },
+          {
+            "id": "532241b7-fb09-5622-b51e-e802b8799c9f",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

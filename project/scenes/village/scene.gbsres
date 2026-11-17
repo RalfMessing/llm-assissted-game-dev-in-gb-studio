@@ -1,0 +1,70 @@
+{
+  "_resourceType": "scene",
+  "id": "f6776942-ec21-5206-bf77-64d3ac088c26",
+  "_index": 2,
+  "type": "TOPDOWN",
+  "name": "Village",
+  "symbol": "scene_village",
+  "x": 540,
+  "y": 60,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "87962902-7faa-5e8d-b9b6-31b75bceea7b",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "b822ca01-c2bf-573c-996d-a05c690fab78",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "0eb09fd9-80bf-552b-8228-0daac590912b",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "346d3890-81d3-5553-9a8d-5e18e1ef573e",
+              "__name": "Show Coin Counter"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "b5e2f471-e061-5e0c-a922-9d6768f58ce4",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "64ef2f75-6d8c-55e3-bd9e-d0c4a83cdb82",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "0d6de88d-2e12-5162-b41c-4b8c6e7e23c5",
+              "__name": "Open Inventory"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2a+00!0f4+004+0f4+003+0f4+00!0f4+004+0f4+003+0f4+00!0f4+004+0f4+003+0f4+00!0f!002+0f!004+0f!002+0f!003+0f4+00d+0f2+00!0f4+00d+0f2+00!0f2+0012+0f2+0012+0f6+00e+0f6+009+0f4+00!0f4+00b+0f4+00!0fb+004+0f4+00!0f4+00b+0f4+00!0f4+0010+0f2a+"
+}

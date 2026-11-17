@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "c7d1b1cd-1a40-5416-bda9-abb5c957d58b",
+  "_index": 0,
+  "symbol": "actor_village_elder",
+  "prefabId": "",
+  "name": "Elder",
+  "coordinateType": "tiles",
+  "x": 10,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b1e50274-c9e4-581a-8f7e-826829e4b5f9",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "c0d31acd-c030-51eb-acf0-959f2f13f9f6",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "b1350b77-08fa-5480-be4c-f157e6d2f841",
+        "__name": "Talk Elder",
+        "$actor[0]$": "c7d1b1cd-1a40-5416-bda9-abb5c957d58b"
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

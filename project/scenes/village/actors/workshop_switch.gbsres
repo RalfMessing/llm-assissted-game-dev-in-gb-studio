@@ -1,0 +1,58 @@
+{
+  "_resourceType": "actor",
+  "id": "9217c03d-7674-5718-8513-b46f359581c4",
+  "_index": 2,
+  "symbol": "actor_workshop_switch",
+  "prefabId": "",
+  "name": "Workshop Switch",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5d8bdb52-af19-5893-92cb-012f019e3aee",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d1844bb0-894e-518a-8caa-0c979853c6a6",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "26962bb1-ec61-5860-9135-5680cd3de5cb",
+        "__name": "Toggle Switch",
+        "$actor[0]$": "9217c03d-7674-5718-8513-b46f359581c4",
+        "$actor[1]$": "b4b7b963-2390-5d67-81e9-89a51fe0b1c8",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "9"
+        }
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "dfcff3d2-241f-5fce-89a3-4c595941dd15",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "393bdd13-83d1-5483-80f5-989c7a63dc25",
+        "__name": "Switch Init",
+        "$actor[0]$": "9217c03d-7674-5718-8513-b46f359581c4",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "9"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

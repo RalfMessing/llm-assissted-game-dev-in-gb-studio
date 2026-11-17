@@ -1,0 +1,100 @@
+{
+  "_resourceType": "script",
+  "id": "1f9e6c44-d769-5740-998c-53626ce8920c",
+  "name": "items/Collect Item",
+  "symbol": "script_collect_item",
+  "description": "A6.2: Wird als 'On Hit: Player' eines Gegenstands aufgerufen (Kollisionsgruppe 1 -> Beruehrung genuegt). Nur wenn 'Taken' noch 0 ist: Taken=1, Gegenstand deaktivieren (verschwindet sofort), 'Count' (Bestand GENAU dieses Typs) +1. Parameter: Actor 'Item' = Gegenstand, Variable 'Taken' = Sperre dieses Objekts, Variable 'Count' = Bestand des Typs (MushroomCount / AppleCount / GemCount).",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Taken",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Count",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Item"
+    }
+  },
+  "script": [
+    {
+      "id": "bd2feb6a-2c12-5e3f-93b9-fd9d9f67ba40",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "c09b859f-ac50-5593-bcab-5a24ee59b3a0",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Schon eingesammelt: nichts zaehlen",
+              "__collapse": false
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "eeec5d66-8f75-5885-930b-a0b043044343",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Sperre zuerst setzen -> jedes Objekt zaehlt nur einmal",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "771149a3-d13e-5e3a-adb8-85789e40b7f3",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "efa74a98-0ca6-5ffb-92bb-a7130f23a41d",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Gegenstand sofort entfernen (A6.2)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "fe5f7e97-b33a-50b6-81a6-ac088a7c2776",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "id": "a768f3ec-e714-54e8-9761-dc8ac3d5ec55",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Bestand genau dieses Typs um 1 erhoehen (A6.2)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "346871b9-bdf2-5073-8fb7-6fcabf24f084",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "V1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

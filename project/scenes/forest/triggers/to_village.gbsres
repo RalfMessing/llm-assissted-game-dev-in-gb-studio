@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "1d02d4f3-5afa-5e00-aac0-4bb85db5b249",
+  "_index": 0,
+  "symbol": "trigger_to_village",
+  "prefabId": "",
+  "name": "To Village",
+  "x": 19,
+  "y": 8,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "4d968e18-7a59-5d71-ade9-1bd76ca0aef9",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "88bf627c-9772-599a-97de-e9707897f1fe",
+        "__name": "Warp To Village"
+      }
+    }
+  ],
+  "leaveScript": []
+}

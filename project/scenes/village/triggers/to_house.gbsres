@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "7ebbeeec-c61d-5626-b1df-8bfe5a15591d",
+  "_index": 1,
+  "symbol": "trigger_to_house",
+  "prefabId": "",
+  "name": "To House",
+  "x": 4,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "6967db42-e6c2-523e-8ee9-40183bb5b482",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ee61fcb4-7a87-5045-9fda-fc2fc022ab81",
+        "__name": "Warp To House"
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,52 @@
+{
+  "_resourceType": "actor",
+  "id": "b4b7b963-2390-5d67-81e9-89a51fe0b1c8",
+  "_index": 3,
+  "symbol": "actor_workshop_door",
+  "prefabId": "",
+  "name": "Workshop Door",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "bb0965a2-5882-520e-bbfe-e46fc4728cac",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "fe71aaa1-3935-5502-a5ee-b6a0f7647888",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "aac0336e-03d9-54d1-b2b8-aa11e309b177",
+        "__name": "Locked Workshop Door"
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "2d402b27-bc07-57d4-9c3a-3ec5071ce357",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f6991ed6-c038-59ed-97db-12dd52a93aa4",
+        "__name": "Door Init",
+        "$actor[0]$": "b4b7b963-2390-5d67-81e9-89a51fe0b1c8",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "9"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

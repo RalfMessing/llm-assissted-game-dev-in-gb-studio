@@ -1,0 +1,36 @@
+{
+  "_resourceType": "script",
+  "id": "bb4f7f3e-5231-5a96-92c7-23781c2c68ea",
+  "name": "world/Warp To Workshop",
+  "symbol": "script_warp_to_workshop",
+  "description": "A5.6: Uebergang Dorf -> Werkstatt. Ausloeser: Trigger 'To Workshop' auf der Tueroeffnung; nur erreichbar, wenn der Tuer-Actor deaktiviert ist (Schalter an).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "f8b0df41-8f43-59ca-9781-2b07bd89b53f",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A5.6: Ankunft (9, 15), Blick up; Rueckweg-Trigger liegt bei y = 17",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "41bb8d68-16e7-548e-a98c-a58ebe262599",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1fa6b7ba-f129-5c2b-bd1d-5851c752d86c",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

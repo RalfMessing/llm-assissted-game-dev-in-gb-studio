@@ -1,0 +1,95 @@
+{
+  "_resourceType": "script",
+  "id": "ee3b37c5-58e1-5176-9002-6b2077719b89",
+  "name": "coins/Collect Coin",
+  "symbol": "script_collect_coin",
+  "description": "A3: Wird als 'On Hit: Player' der Muenze aufgerufen (Kollisionsgruppe 1 -> Beruehrung genuegt). Zaehlt nur, wenn 'Taken' noch 0 ist: Taken=1, Muenze deaktivieren (verschwindet sofort), CoinCount +1. Parameter: Actor 'Coin' = die Muenze, Variable 'Taken' = CoinNTaken dieser Muenze.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Taken",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Coin"
+    }
+  },
+  "script": [
+    {
+      "id": "120df32d-c513-5397-9ad8-bf4a661c75d9",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "564c6b24-8f2d-53b7-be89-abcd6791d7ef",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Schon eingesammelt: nichts zaehlen (A3.4)",
+              "__collapse": false
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "4950c0b1-9df5-5b73-87db-83be5225bfab",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Sperre zuerst setzen -> jede Muenze zaehlt nur einmal (A3.4)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "fa3dc5da-7f63-5f8d-9a45-81a8ea27aeba",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "ffabdef1-7763-55bd-947b-6d009a9429a6",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Muenze sofort entfernen (A3.3)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "85b742fa-97ef-5b90-9050-2d80423753b9",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          },
+          {
+            "id": "802b4488-2d76-55fc-8c62-b27d2f6f4446",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Zaehler um genau 1 erhoehen (A3.3)",
+              "__collapse": false
+            }
+          },
+          {
+            "id": "bc3af3bb-2090-552c-8af2-90b595116a1c",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

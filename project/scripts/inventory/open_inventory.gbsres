@@ -1,0 +1,75 @@
+{
+  "_resourceType": "script",
+  "id": "0d6de88d-2e12-5162-b41c-4b8c6e7e23c5",
+  "name": "inventory/Open Inventory",
+  "symbol": "script_open_inventory",
+  "description": "A6.3-A6.6 + A6R: Inventar per B-Knopf. Script-Lock -> Spiel steht still (Spieler, Actors, Timer). Sprites ausblenden, bildschirmfuellende Textbox mit Icon (Zeichen der Schrift) + Bestand je Typ. Die Bestaende werden DIREKT aus den Spielvariablen gelesen (CoinCount, KeyTaken, MushroomCount, AppleCount, GemCount) -> keine doppelte Buchfuehrung. Schliessen nur mit B, danach laeuft alles weiter. Waehrend eines Dialogs ist das Spiel gesperrt -> der B-Knopf-Script startet dort nicht (A6.6).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "9542a65a-0fd1-5f6b-94c6-7aa5b69a8267",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A6.5: Spiel anhalten (Spieler/Actors/Timer/Knopf-Scripts stehen)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "18301373-5a24-5463-b5ad-988fbd963990",
+      "command": "EVENT_SCRIPT_LOCK",
+      "args": {}
+    },
+    {
+      "id": "5ad76ad9-4ceb-5660-a77b-c7250d2e4782",
+      "command": "EVENT_HIDE_SPRITES",
+      "args": {}
+    },
+    {
+      "id": "d08a6b1e-e788-5a72-98f8-032e8eba9ddd",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A6.4 / A6R.1 / A6R.2: Icon + Anzahl je Typ, Werte direkt aus den Variablen",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "c1da1ad5-4795-5ddc-bc5e-4caface99220",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!S0!INVENTAR\n\n x$05$\n\n x$10$\n\n x$11$\n\n x$14$\n\n x$16$\n\nB: Schließen"
+        ],
+        "avatarId": "",
+        "minHeight": 18,
+        "maxHeight": 18,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 4,
+        "textY": 1,
+        "textHeight": 16,
+        "closeWhen": "key",
+        "closeButton": "b"
+      }
+    },
+    {
+      "id": "960bb4c4-a9c6-5291-b5ce-375e4bedd44a",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A6.3: mit B geschlossen -> alles laeuft wie zuvor weiter (A6.5)",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "5015a718-fde9-5b82-8554-c65fc90a5aba",
+      "command": "EVENT_SHOW_SPRITES",
+      "args": {}
+    },
+    {
+      "id": "9fffbc33-281e-55ce-b5e3-be001e336593",
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {}
+    }
+  ]
+}

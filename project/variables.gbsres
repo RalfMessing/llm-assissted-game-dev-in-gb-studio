@@ -1,0 +1,186 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "MetElder",
+      "symbol": "var_met_elder"
+    },
+    {
+      "id": "1",
+      "name": "ReadForestSign",
+      "symbol": "var_read_forest_sign"
+    },
+    {
+      "id": "2",
+      "name": "VisitedVillage",
+      "symbol": "var_visited_village"
+    },
+    {
+      "id": "3",
+      "name": "TitleChoice",
+      "symbol": "var_title_choice"
+    },
+    {
+      "id": "4",
+      "name": "ChestOpened",
+      "symbol": "var_chest_opened"
+    },
+    {
+      "id": "5",
+      "name": "CoinCount",
+      "symbol": "var_coin_count"
+    },
+    {
+      "id": "6",
+      "name": "Coin1Taken",
+      "symbol": "var_coin1_taken"
+    },
+    {
+      "id": "7",
+      "name": "Coin2Taken",
+      "symbol": "var_coin2_taken"
+    },
+    {
+      "id": "8",
+      "name": "Coin3Taken",
+      "symbol": "var_coin3_taken"
+    },
+    {
+      "id": "9",
+      "name": "SwitchOn",
+      "symbol": "var_switch_on"
+    },
+    {
+      "id": "10",
+      "name": "KeyTaken",
+      "symbol": "var_key_taken"
+    },
+    {
+      "id": "11",
+      "name": "MushroomCount",
+      "symbol": "var_mushroom_count"
+    },
+    {
+      "id": "12",
+      "name": "Mushroom1Taken",
+      "symbol": "var_mushroom1_taken"
+    },
+    {
+      "id": "13",
+      "name": "Mushroom2Taken",
+      "symbol": "var_mushroom2_taken"
+    },
+    {
+      "id": "14",
+      "name": "AppleCount",
+      "symbol": "var_apple_count"
+    },
+    {
+      "id": "15",
+      "name": "AppleTaken",
+      "symbol": "var_apple_taken"
+    },
+    {
+      "id": "16",
+      "name": "GemCount",
+      "symbol": "var_gem_count"
+    },
+    {
+      "id": "17",
+      "name": "GemTaken",
+      "symbol": "var_gem_taken"
+    },
+    {
+      "id": "18",
+      "name": "EnemyX",
+      "symbol": "var_enemy_x"
+    },
+    {
+      "id": "19",
+      "name": "EnemyY",
+      "symbol": "var_enemy_y"
+    },
+    {
+      "id": "20",
+      "name": "EnemyPlayerX",
+      "symbol": "var_enemy_player_x"
+    },
+    {
+      "id": "21",
+      "name": "EnemyPlayerY",
+      "symbol": "var_enemy_player_y"
+    },
+    {
+      "id": "22",
+      "name": "EnemyDX",
+      "symbol": "var_enemy_d_x"
+    },
+    {
+      "id": "23",
+      "name": "EnemyDY",
+      "symbol": "var_enemy_d_y"
+    },
+    {
+      "id": "24",
+      "name": "EnemyADX",
+      "symbol": "var_enemy_a_d_x"
+    },
+    {
+      "id": "25",
+      "name": "EnemyADY",
+      "symbol": "var_enemy_a_d_y"
+    },
+    {
+      "id": "26",
+      "name": "EnemyDist",
+      "symbol": "var_enemy_dist"
+    },
+    {
+      "id": "27",
+      "name": "EnemyChasing",
+      "symbol": "var_enemy_chasing"
+    },
+    {
+      "id": "28",
+      "name": "EnemyPatrolDir",
+      "symbol": "var_enemy_patrol_dir"
+    },
+    {
+      "id": "29",
+      "name": "EnemyPatrolSteps",
+      "symbol": "var_enemy_patrol_steps"
+    },
+    {
+      "id": "30",
+      "name": "EnemyBlocked",
+      "symbol": "var_enemy_blocked"
+    },
+    {
+      "id": "31",
+      "name": "EnemyMoved",
+      "symbol": "var_enemy_moved"
+    },
+    {
+      "id": "32",
+      "name": "EnemyNewX",
+      "symbol": "var_enemy_new_x"
+    },
+    {
+      "id": "33",
+      "name": "EnemyNewY",
+      "symbol": "var_enemy_new_y"
+    },
+    {
+      "id": "34",
+      "name": "EnemyStepX",
+      "symbol": "var_enemy_step_x"
+    },
+    {
+      "id": "35",
+      "name": "EnemyStepY",
+      "symbol": "var_enemy_step_y"
+    }
+  ],
+  "constants": []
+}

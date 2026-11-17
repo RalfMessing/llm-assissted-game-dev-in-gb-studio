@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "20f838b8-892a-57dc-8851-f052a019ed71",
+  "_index": 5,
+  "symbol": "actor_key",
+  "prefabId": "",
+  "name": "Key",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "4f39634b-4921-52c2-8d30-bdbbac31906f",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "029be6de-62e1-5fca-9a01-deb15261aa55",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "07c476d2-3a4f-5279-81ac-6201a9101720",
+        "__name": "Collect Key",
+        "$actor[0]$": "20f838b8-892a-57dc-8851-f052a019ed71",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "10"
+        }
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "c4be1607-8494-5f45-9c17-3c65aae1b92a",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f5834980-02a5-56bb-80ae-5af18aa41530",
+        "__name": "Coin Init",
+        "$actor[0]$": "20f838b8-892a-57dc-8851-f052a019ed71",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "10"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

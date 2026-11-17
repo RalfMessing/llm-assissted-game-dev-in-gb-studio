@@ -1,0 +1,41 @@
+{
+  "_resourceType": "script",
+  "id": "346d3890-81d3-5553-9a8d-5e18e1ef573e",
+  "name": "debug/Show Coin Counter",
+  "symbol": "script_show_coin_counter",
+  "description": "A3.2: Debug-Ausgabe des Muenzzaehlers (Select-Taste in allen Spielszenen). A5: zusaetzlich KeyTaken (Schluessel) und SwitchOn (Schalter) als 0/1. Spieler ist waehrenddessen gesperrt.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "b7cc0b67-8324-5784-9f60-517585c76cd5",
+      "command": "EVENT_SCRIPT_LOCK",
+      "args": {}
+    },
+    {
+      "id": "057e9212-8138-5281-8760-961eec9e1830",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Münzen: $05$\nSchlüssel: $10$\nSchalter: $09$"
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    },
+    {
+      "id": "fcd905d9-e7df-57db-bee7-cf1dfbc3513b",
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {}
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "8a679275-d03b-514f-808d-38923eb2a07d",
+  "_index": 2,
+  "symbol": "trigger_to_workshop",
+  "prefabId": "",
+  "name": "To Workshop",
+  "x": 12,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "f8d53c2c-ebbf-5f9c-bb09-edba5840a88e",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "bb4f7f3e-5231-5a96-92c7-23781c2c68ea",
+        "__name": "Warp To Workshop"
+      }
+    }
+  ],
+  "leaveScript": []
+}

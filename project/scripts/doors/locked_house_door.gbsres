@@ -1,0 +1,31 @@
+{
+  "_resourceType": "script",
+  "id": "31d0e21e-c029-53ff-a42d-26e3677edf72",
+  "name": "doors/Locked House Door",
+  "symbol": "script_locked_house_door",
+  "description": "A5R.2: A-Knopf an der verschlossenen Haustuer (A4). Nur Hinweistext; der Actor selbst blockiert den Spieler.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "8cb4d18a-eda0-5ff3-8ee5-3ae6c501c39e",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Verschlossen.\nDu brauchst\neinen Schlüssel."
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    }
+  ]
+}

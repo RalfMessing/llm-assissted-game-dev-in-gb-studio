@@ -1,0 +1,45 @@
+{
+  "_resourceType": "script",
+  "id": "f5834980-02a5-56bb-80ae-5af18aa41530",
+  "name": "coins/Coin Init",
+  "symbol": "script_coin_init",
+  "description": "A3.5: Beim Laden der Szene bereits eingesammelte Muenzen sofort entfernen. Parameter: Actor 'Coin' = die Muenze, Variable 'Taken' = CoinNTaken dieser Muenze.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Taken",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Coin"
+    }
+  },
+  "script": [
+    {
+      "id": "3012ed6e-1a83-56cd-9d32-74a763412add",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "1005f682-a395-5247-acab-61c783123b46",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "f6991ed6-c038-59ed-97db-12dd52a93aa4",
+  "name": "doors/Door Init",
+  "symbol": "script_door_init",
+  "description": "A5.1/A5.7/A5R.2: Beim Laden der Szene: ist 'Open' = 1, wird der Tuer-Actor sofort deaktiviert (Oeffnung frei, Trigger erreichbar). Sonst bleibt er aktiv und blockiert den Spieler. Wird fuer BEIDE Tueren benutzt: Werkstatt (Open = SwitchOn) und Haus 1 (Open = KeyTaken). Parameter: Actor 'Door' = Tuer, Variable 'Open'.",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Open",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Door"
+    }
+  },
+  "script": [
+    {
+      "id": "547fa8a2-5e56-5072-8a1e-3908ca438d5e",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "49aa1709-41ff-5228-a2e0-6adcc4f665d1",
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0"
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "0adacd44-5ad4-5657-9d1b-e02ef9c97df2",
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Verschlossen: Tuer-Actor bleibt aktiv und blockiert (A5.2 / A5R.2)",
+              "__collapse": false
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

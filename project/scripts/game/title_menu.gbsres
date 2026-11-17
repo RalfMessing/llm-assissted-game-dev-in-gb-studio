@@ -1,0 +1,85 @@
+{
+  "_resourceType": "script",
+  "id": "81416521-a940-578c-9664-10544a019f74",
+  "name": "game/Title Menu",
+  "symbol": "script_title_menu",
+  "description": "Titelbildschirm: versteckt den Spieler und zeigt das Menue (Start Game / Steuerung).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "720ad822-aa80-5d58-9179-96cac33ab7ca",
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "e9a8ca56-0e79-5920-89e4-35280d3cae9e",
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "id": "0670bc0b-f2ae-51c8-95fe-fb23d8f94c58",
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "3",
+              "trueText": "Start Game",
+              "falseText": "Steuerung"
+            }
+          },
+          {
+            "id": "fd71c429-729b-59e7-95d1-cc66c2e50c91",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "3"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "a3fcf307-5849-5a0f-a187-6db4315d1baa",
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "48d11a81-57df-5db2-be8d-c2d5e0e78b9c",
+                    "__name": "Start New Game"
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "0519d62e-e650-51ad-b44f-6d54428de50c",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Pfeiltasten:\nLaufen",
+                      "Taste A:\nSprechen / Lesen\n/ Oeffnen",
+                      "Rand der Karte:\nGebiet wechseln",
+                      "Select:\nMünzzähler\nanzeigen (Debug)",
+                      "Taste B:\nInventar auf/zu"
+                    ],
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "position": "bottom",
+                    "showFrame": "true",
+                    "clearPrevious": true,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "closeWhen": "key",
+                    "closeButton": "a"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

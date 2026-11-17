@@ -1,0 +1,24 @@
+{
+  "_resourceType": "trigger",
+  "id": "6d830442-e52b-515f-a1ea-1a371e09a574",
+  "_index": 0,
+  "symbol": "trigger_exit_house",
+  "prefabId": "",
+  "name": "Exit House",
+  "x": 9,
+  "y": 17,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "3ae4125a-9719-58a1-a244-bfffbaaaa7db",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c2d46002-e8a7-5e76-a8e0-7226b6f2908b",
+        "__name": "Warp House To Village"
+      }
+    }
+  ],
+  "leaveScript": []
+}

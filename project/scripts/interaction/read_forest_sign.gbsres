@@ -1,0 +1,77 @@
+{
+  "_resourceType": "script",
+  "id": "05bc9760-7a55-5cf7-a04e-936c0b6d548a",
+  "name": "interaction/Read Forest Sign",
+  "symbol": "script_read_forest_sign",
+  "description": "Wegweiser im Wald (A-Knopf). Merkt sich, dass das Schild gelesen wurde.",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "49eaafc0-8043-53d1-bd48-b269dd9f6c42",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Wegweiser:\n-> Dorf Lindenau\n   (Osten)"
+        ],
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "position": "bottom",
+        "showFrame": "true",
+        "clearPrevious": true,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "closeWhen": "key",
+        "closeButton": "a"
+      }
+    },
+    {
+      "id": "f8a30c53-310c-5b6c-8b83-17c063f65f4e",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "2"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ce6d3979-80b2-5038-adca-d46acff0db7b",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Das Dorf kennst\ndu ja schon."
+              ],
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "position": "bottom",
+              "showFrame": "true",
+              "clearPrevious": true,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "closeWhen": "key",
+              "closeButton": "a"
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "8320deb1-6f4f-57b4-97b3-309800c03945",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "true"
+        }
+      }
+    }
+  ]
+}

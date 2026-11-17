@@ -1,0 +1,36 @@
+{
+  "_resourceType": "script",
+  "id": "ee61fcb4-7a87-5045-9fda-fc2fc022ab81",
+  "name": "world/Warp To House",
+  "symbol": "script_warp_to_house",
+  "description": "A4: Uebergang Dorf -> Hausinneres. Ausloeser: Trigger 'To House' auf dem Tuerfeld (Beruehrung). Spieler erscheint auf festem Feld vor der Fussmatte (nicht auf dem Rueckkehr-Trigger).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "8a367094-deb2-511f-872c-7ea9fee7e6f4",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A4.3: Ankunft (9, 15), Blick up; Rueckkehr-Trigger liegt bei y = 17",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "92e35687-abc2-5381-afaf-7df28552d75b",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "56aae6b4-1a74-5620-83a3-e9e209818997",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

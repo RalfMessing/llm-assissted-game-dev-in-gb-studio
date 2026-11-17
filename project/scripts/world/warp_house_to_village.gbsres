@@ -1,0 +1,36 @@
+{
+  "_resourceType": "script",
+  "id": "c2d46002-e8a7-5e76-a8e0-7226b6f2908b",
+  "name": "world/Warp House To Village",
+  "symbol": "script_warp_house_to_villag",
+  "description": "A4: Uebergang Hausinneres -> Dorf. Ausloeser: Trigger 'Exit House' auf der Fussmatte (Beruehrung). Spieler erscheint vor der Haustuer (nicht auf dem Tuer-Trigger).",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "id": "af099d89-4c9c-53c7-bafe-2b3df98e6a1b",
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "A4.4: Ankunft (4, 7), Blick down; Tuer-Trigger liegt bei y = 5",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "0ee09242-b5a5-522e-b0d9-77430bc23b31",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f6776942-ec21-5206-bf77-64d3ac088c26",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      }
+    }
+  ]
+}

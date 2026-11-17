@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "ddd4b674-dc0a-5a73-ba96-1e6e266c2709",
+  "_index": 1,
+  "symbol": "actor_village_guard",
+  "prefabId": "",
+  "name": "Guard",
+  "coordinateType": "tiles",
+  "x": 2,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "13b7b5a4-9dab-52f0-9283-ef9b4495c5cf",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "407cfed6-dc79-5890-b2ef-fee8e45a35af",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "2d55df1c-5705-5c95-bb38-c7ae9b35135e",
+        "__name": "Talk Guard"
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

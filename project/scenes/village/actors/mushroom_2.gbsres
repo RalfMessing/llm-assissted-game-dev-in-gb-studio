@@ -1,0 +1,61 @@
+{
+  "_resourceType": "actor",
+  "id": "afd768f6-d767-5fa5-b080-764c01f53d89",
+  "_index": 5,
+  "symbol": "actor_mushroom_2",
+  "prefabId": "",
+  "name": "Mushroom 2",
+  "coordinateType": "tiles",
+  "x": 5,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0227e902-371a-552e-a1e5-5eff2621bc67",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "954b2ded-d46a-5253-bd43-be6f1d7c37c1",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "1f9e6c44-d769-5740-998c-53626ce8920c",
+        "__name": "Collect Item",
+        "$actor[0]$": "afd768f6-d767-5fa5-b080-764c01f53d89",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "13"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "11"
+        }
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "a31e7559-fed9-50d0-96fc-60ee15d67115",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f5834980-02a5-56bb-80ae-5af18aa41530",
+        "__name": "Coin Init",
+        "$actor[0]$": "afd768f6-d767-5fa5-b080-764c01f53d89",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "13"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
