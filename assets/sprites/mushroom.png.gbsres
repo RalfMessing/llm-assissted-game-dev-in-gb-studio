@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "0227e902-371a-552e-a1e5-5eff2621bc67",
+  "name": "mushroom",
+  "symbol": "sprite_mushroom",
+  "states": [
+    {
+      "id": "6dc06ba2-ebf4-5ec2-839d-1138281d1c3a",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "c29b0223-63e9-50a0-89bc-5eae37995368",
+          "frames": [
+            {
+              "id": "13e2739b-240e-5662-987f-26f8e48dfa58",
+              "tiles": [
+                {
+                  "id": "2f6abd3c-fb3f-57ca-a74e-eb7c76844d5a",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "ea3b229a-e805-510c-b19f-a845e632f695",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7e55ba2f-1056-5845-a4bd-2d143bb06ff8",
+          "frames": [
+            {
+              "id": "0d0b4ac0-5502-55b7-8c11-0f671af30169",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e83f5ae4-ccf0-571d-bb86-f6c12e517774",
+          "frames": [
+            {
+              "id": "5f805d81-3fdb-59fe-bb50-607a74253aed",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5edd963d-0baa-5b17-b10d-4bd6b268264f",
+          "frames": [
+            {
+              "id": "ada13be5-49bf-5789-b7a8-2b200d84fb84",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0b92b1d9-31fb-5164-b1b2-adcc73c17adb",
+          "frames": [
+            {
+              "id": "3700586a-0110-584e-8d03-9b258f85fb13",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "650f02fd-d0ad-5852-84da-cae6e1b6fa1d",
+          "frames": [
+            {
+              "id": "f51627dd-1b0c-5b48-8501-25e49d602114",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "86961db7-c8b1-5af0-8866-d1d8f8c85236",
+          "frames": [
+            {
+              "id": "4ec07be2-d14a-5547-a97b-5bec5e4a5596",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f6a73845-41ee-51dc-92a5-37b677a7232d",
+          "frames": [
+            {
+              "id": "fc2cce47-5ae3-50be-8686-109b2302357d",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "mushroom.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "c6b0241f245e1a202439f71f12f094637c443693"
+}

@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "bb0965a2-5882-520e-bbfe-e46fc4728cac",
+  "name": "door",
+  "symbol": "sprite_door",
+  "states": [
+    {
+      "id": "9ee9e94c-a301-57ed-af5e-1991aa524b25",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "658d6037-a1a0-5de5-afad-46c27336712d",
+          "frames": [
+            {
+              "id": "5347e286-e4c5-5a82-98d7-8191c110db9c",
+              "tiles": [
+                {
+                  "id": "292eabfa-05e1-530e-868b-5703a477ee36",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "0f95c4e3-707e-58a3-bb91-89e866db74ba",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7e37d06f-1eee-5496-affa-6a3b6fb17074",
+          "frames": [
+            {
+              "id": "44fc9851-de93-5906-ae6c-fb31abb978fa",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "143798a3-03de-5a92-a4fa-da0dfe2d81d5",
+          "frames": [
+            {
+              "id": "750158da-cfb7-5f50-bd73-33045bdffab4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c8b13c5c-4426-58dc-86f3-51e8ace99c88",
+          "frames": [
+            {
+              "id": "c429d981-ed75-567b-93d0-c2ea9679fb62",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8f979b26-b698-5bf9-bcc3-713f6fde837a",
+          "frames": [
+            {
+              "id": "9a6a0d9f-583f-5be4-8e1c-153597f5d741",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5c313a92-281e-5236-9399-a11f1e8ae053",
+          "frames": [
+            {
+              "id": "ed639e3a-6c33-5fa9-ace0-a81d6c723fad",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b7085141-ee2a-5cc3-ac80-1f1bda9967cb",
+          "frames": [
+            {
+              "id": "a4065da7-e715-5f1f-b5ee-990b775faec3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a118519a-eeb1-5842-aac7-3e969fcfe9fd",
+          "frames": [
+            {
+              "id": "a09ac1f3-efce-5d48-bce1-f4864199ddf9",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "door.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "57c699a3c6b637aa94f62179b2b2aa9e4a464bf9"
+}

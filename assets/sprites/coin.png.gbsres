@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "93690608-d126-5247-87d4-ca093bbc40f2",
+  "name": "coin",
+  "symbol": "sprite_coin",
+  "states": [
+    {
+      "id": "8663e666-a1d3-5203-8a1b-e4d55ff7ca7c",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "24abdbbc-f2fa-548b-83df-78d131958854",
+          "frames": [
+            {
+              "id": "2d6c7095-4b9d-5c42-980f-1e63878e8c36",
+              "tiles": [
+                {
+                  "id": "e00ef9a3-9b31-5010-84e5-c74f7e4f3f2d",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "79b4a557-152f-5660-8506-0b7e19fee370",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bd4f1753-ea1b-548b-8a97-8438f1ad6570",
+          "frames": [
+            {
+              "id": "c10a23fe-e176-5bd1-9595-5559a9bd7ce9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e29157e1-33cd-516d-a807-4b5877a7265a",
+          "frames": [
+            {
+              "id": "744c6484-d659-5c79-860e-1b6338eaf36e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "72da1e8f-2c88-51aa-acdd-a0a58004f450",
+          "frames": [
+            {
+              "id": "4335b4c5-75d2-5710-b48e-43ded5fa0da3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f973d679-2cdc-5aee-9cf0-639511f6393e",
+          "frames": [
+            {
+              "id": "3495e64c-3da0-5e97-9d95-809e93ee0c3f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e9cd2119-27a4-5224-9964-ddef1c62da93",
+          "frames": [
+            {
+              "id": "196ebba8-8669-51c2-9d55-73f10551bda6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "bbd11726-4360-531f-b777-4b79478ee355",
+          "frames": [
+            {
+              "id": "c926bab4-e431-5052-a6db-152699a9e5cd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "24a83504-0404-5ca9-a21a-6df2e02b57ab",
+          "frames": [
+            {
+              "id": "fd578d63-d0bd-5612-b0ee-a254b1661da0",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "coin.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "1d5fac2f67fffca6821b73e9d432c1b350721dd4"
+}

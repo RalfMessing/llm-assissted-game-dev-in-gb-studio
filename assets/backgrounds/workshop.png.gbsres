@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "27353b64-a8e2-54a8-9f0f-57d2b00697d2",
+  "name": "workshop",
+  "symbol": "bg_workshop",
+  "tileColors": "",
+  "filename": "workshop.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

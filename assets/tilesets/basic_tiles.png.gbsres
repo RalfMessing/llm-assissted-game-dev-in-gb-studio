@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "d1972400-ae7d-508f-aedc-62f7486496a7",
+  "name": "basic_tiles",
+  "symbol": "tileset_basic_tiles",
+  "width": 20,
+  "height": 1,
+  "imageWidth": 160,
+  "imageHeight": 8,
+  "filename": "basic_tiles.png"
+}

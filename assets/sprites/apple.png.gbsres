@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "b916d2d8-2660-590e-859a-9a7b64928818",
+  "name": "apple",
+  "symbol": "sprite_apple",
+  "states": [
+    {
+      "id": "5c255850-33b9-5061-897a-ef91cfabf5d8",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "42f3edbc-b2a4-5830-92ae-8df13b29af83",
+          "frames": [
+            {
+              "id": "45553836-1d8c-5812-9c8d-a722ac16c63b",
+              "tiles": [
+                {
+                  "id": "b61b591e-053f-54fa-b3e8-78db6c9f78cd",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "2f2e3971-71a9-53ff-8c22-b136e7f7061d",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 0,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a1eddc4c-f948-504d-b447-0b5074f0840a",
+          "frames": [
+            {
+              "id": "d1cde361-da51-5d52-b42f-71cea9151d69",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "80a53f05-570d-510f-8273-25f293dc90d0",
+          "frames": [
+            {
+              "id": "8b46ba17-170f-563e-9aef-b3106e50a55f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d40315c4-5f49-5972-85fd-0c4d3290fb3e",
+          "frames": [
+            {
+              "id": "6e526b30-51db-5f95-915d-43f3fc2a9cfc",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "44297552-e4b1-5d8c-94bd-607cd9a892fc",
+          "frames": [
+            {
+              "id": "27acf1c7-7742-506b-a0c6-d21c4f5fb943",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ef590fd7-e6c5-56ed-b4fb-d0173b5394c8",
+          "frames": [
+            {
+              "id": "1f350ea6-93ae-5cca-8728-dff4e236c602",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "09e4c190-a4f2-5313-bc43-3c29f66bd622",
+          "frames": [
+            {
+              "id": "5646d4f2-4f36-52e0-b2d0-ac771a45ca67",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e94a92f4-f4d3-5c1f-8519-6bcf1a29627c",
+          "frames": [
+            {
+              "id": "e3b71c0e-a9a3-5426-a167-5ef73f0ecf2a",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "apple.png",
+  "width": 16,
+  "height": 16,
+  "checksum": "0f0cdaaf0a7f74f8af5f48d71854c53316a0d60d"
+}
