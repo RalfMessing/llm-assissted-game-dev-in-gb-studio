@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "65c2fed3-8771-4eb0-834f-11168e1849c7",
+  "_index": 8,
+  "name": "Switch Door Room",
+  "backgroundId": "b340b9a2-2865-4e05-91c0-148846a693c8",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "003d+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f8+002+0f8+009+0f!002+0f!0010+0f4+008+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_9",
+  "x": 701.4814814814814,
+  "y": 621.3333333333333,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "bc9f67e9-b6f2-4216-b8b6-63505f3b7118"
+      },
+      "id": "c547ab88-bb1e-493a-a867-8f9f4b41c79d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

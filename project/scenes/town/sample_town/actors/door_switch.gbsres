@@ -1,0 +1,94 @@
+{
+  "_resourceType": "actor",
+  "id": "e4947750-e374-4687-977a-a202700ece08",
+  "name": "Door Switch",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "450a3571-cc76-41be-8c95-818d60b83c59",
+  "prefabId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_9",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "42"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "42",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "9d452a7d-16d2-47e7-ae95-85420c46b8e0"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "42",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "0a9012b1-2603-4283-961b-58056000d4cf"
+          }
+        ]
+      },
+      "id": "6fae583f-ff04-430d-b1f4-19b771ed5d0d"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "bdaa52bd-7ada-4d62-af12-2440d4b9122e",
+        "$actor[0]$": "e4947750-e374-4687-977a-a202700ece08",
+        "$actor[1]$": "16c1f2ee-41d3-446d-8858-177adf8195f5",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "42"
+        }
+      },
+      "id": "c4cb83fa-b6fd-4f83-898d-18e10d95c74b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "bdaa52bd-7ada-4d62-af12-2440d4b9122e",
+        "$actor[0]$": "e4947750-e374-4687-977a-a202700ece08",
+        "$actor[1]$": "16c1f2ee-41d3-446d-8858-177adf8195f5",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "42"
+        }
+      },
+      "id": "29e62daf-1c04-442e-b5e8-3832d8fcfdda"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 36,
+  "y": 38,
+  "_index": 16
+}

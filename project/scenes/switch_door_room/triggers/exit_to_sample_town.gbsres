@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "d53e1157-a4e4-43cd-b9cd-932b7094dac1",
+  "name": "Exit To Sample Town",
+  "prefabId": "",
+  "x": 9,
+  "y": 15,
+  "symbol": "trigger_23",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+        "x": {
+          "type": "number",
+          "value": 47
+        },
+        "y": {
+          "type": "number",
+          "value": 39
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8e397c4b-58db-4bd8-84f9-a26776c26d23"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

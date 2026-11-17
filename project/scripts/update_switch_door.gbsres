@@ -1,0 +1,102 @@
+{
+  "_resourceType": "script",
+  "id": "bdaa52bd-7ada-4d62-af12-2440d4b9122e",
+  "name": "update switch door",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Switch Door On",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    },
+    "1": {
+      "id": "1",
+      "name": "Actor B"
+    }
+  },
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "fd8bdffb-d3a5-411d-83c5-c3640bd5b18f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "1",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "13b6e7c1-be67-4bdc-93bb-6f6917bce163"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "1"
+            },
+            "id": "1697e5a5-9c49-4213-bda2-05e91777fca5"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "8c631d01-e0f3-43bc-bb63-b57521d0e50a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "1",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "924d1bc0-fce1-4644-9187-0c98f1076ab4"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "1"
+            },
+            "id": "feb7ed4b-98dc-4e8e-9d0d-e5d8efd79892"
+          }
+        ]
+      },
+      "id": "429cee46-700a-44cd-a11c-38394c74cdda"
+    }
+  ]
+}

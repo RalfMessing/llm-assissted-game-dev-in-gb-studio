@@ -3,13 +3,7 @@
   "id": "9f4ca622-301a-4b58-874a-95d15915ce32",
   "name": "collect coin",
   "description": "",
-  "variables": {
-    "V0": {
-      "id": "V0",
-      "name": "Coin Flag",
-      "passByReference": true
-    }
-  },
+  "variables": {},
   "actors": {
     "0": {
       "id": "0",

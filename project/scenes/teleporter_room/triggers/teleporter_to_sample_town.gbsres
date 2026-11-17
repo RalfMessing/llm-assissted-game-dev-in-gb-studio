@@ -3,9 +3,9 @@
   "id": "04df3a03-49fa-40f7-9d58-dc736c0ad5bf",
   "name": "Teleporter To Sample Town",
   "prefabId": "",
-  "x": 8,
-  "y": 12,
-  "symbol": "trigger_19",
+  "x": 10,
+  "y": 14,
+  "symbol": "trigger_22",
   "prefabScriptOverrides": {},
   "width": 2,
   "height": 2,
@@ -20,7 +20,7 @@
         },
         "y": {
           "type": "number",
-          "value": 36
+          "value": 35
         },
         "direction": "down",
         "fadeSpeed": "2"
