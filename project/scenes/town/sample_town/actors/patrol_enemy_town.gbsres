@@ -26,7 +26,7 @@
           "type": "number",
           "value": 0
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "1fbc66cc-e768-4b8b-ab38-e08c6a980e95"
     },
@@ -578,5 +578,5 @@
   "coordinateType": "tiles",
   "x": 44,
   "y": 16,
-  "_index": 12
+  "_index": 11
 }

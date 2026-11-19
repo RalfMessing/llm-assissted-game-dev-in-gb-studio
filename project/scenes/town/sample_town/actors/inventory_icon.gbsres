@@ -1,0 +1,37 @@
+{
+  "_resourceType": "actor",
+  "id": "2b1b521a-9e99-4151-baf5-db7ef09ab39c",
+  "name": "Inventory Icon",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ec0f660e-c420-43ee-9d1e-6d8e9f320213",
+  "prefabId": "dd9ba59e-728a-4257-bd0a-e3a74c104f00",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": true,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_13",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d148e0d0-2d8b-441d-9378-0eb9d272ad78"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 12,
+  "_index": 19
+}

@@ -1,21 +1,13 @@
 {
-  "_resourceType": "actor",
-  "id": "c4058748-207b-4686-9668-bff37e5bceea",
-  "_index": 8,
-  "symbol": "actor_florist",
-  "prefabId": "",
-  "name": "Florist",
-  "coordinateType": "tiles",
-  "x": 47,
-  "y": 47,
+  "_resourceType": "actorPrefab",
+  "id": "dd9ba59e-728a-4257-bd0a-e3a74c104f00",
+  "name": "Inventory Icon",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "2b18f935-85a3-4f38-9f52-e5c4ea20776a",
-  "paletteId": "",
-  "direction": "down",
+  "spriteSheetId": "ec0f660e-c420-43ee-9d1e-6d8e9f320213",
   "moveSpeed": 1,
   "animSpeed": 15,
-  "isPinned": false,
+  "paletteId": "",
   "persistent": false,
   "collisionGroup": "",
   "collisionExtraFlags": [],
@@ -23,11 +15,12 @@
   "script": [],
   "startScript": [
     {
-      "id": "2eb6780d-6ecb-4594-b200-0ee1933cbb2f",
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$"
-      }
+      },
+      "id": "91174be6-e375-4fa5-b681-62f551cdd980",
+      "children": {}
     }
   ],
   "updateScript": [],

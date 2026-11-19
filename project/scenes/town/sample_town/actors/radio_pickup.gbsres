@@ -1,0 +1,76 @@
+{
+  "_resourceType": "actor",
+  "id": "132eae46-7e08-4e2a-8df2-1474220c55d2",
+  "name": "Radio Pickup",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a0442b6a-634f-44da-9962-77938e3ed839",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_12",
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "44"
+      },
+      "id": "6db02a17-88bd-4fa1-a21f-f7246a9442d0"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "05dc6837-17ba-4441-bcfe-fe841f0b14dc"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "44"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "67923baf-9f41-406d-9c04-e6dfb24c057e"
+          }
+        ],
+        "false": []
+      },
+      "id": "219a8643-dbbf-459f-bf0a-36db461b3f32"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 41,
+  "y": 32,
+  "_index": 18
+}

@@ -73,6 +73,34 @@
         "musicId": "326b3cbc-1e3d-4a43-846f-c962ece2c317",
         "loop": true
       }
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {},
+      "id": "559fb090-fb9a-4f4a-9b86-bc411e764f92"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "a33093ba-7ce3-43ef-8409-82d9b1fcaa18",
+              "$actor[0]$": "c6bed95f-303e-4446-9026-7547801a81d7"
+            },
+            "id": "3066a6ef-574a-459b-8136-8ba62334a667"
+          }
+        ]
+      },
+      "id": "4ed06583-58c8-4b01-90a6-6ce94e46febf"
     }
   ],
   "playerHit1Script": [],

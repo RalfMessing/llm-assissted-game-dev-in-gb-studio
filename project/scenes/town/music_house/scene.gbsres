@@ -28,6 +28,34 @@
       "command": "EVENT_MUSIC_STOP",
       "args": {},
       "id": "919e8390-3d03-4bfb-ba3e-5119c1bff417"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {},
+      "id": "615b0eba-7714-461d-8424-a99a55fe54fd"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "a33093ba-7ce3-43ef-8409-82d9b1fcaa18",
+              "$actor[0]$": "b010bd9b-2c2b-4b3e-a285-2dc8cee2879e"
+            },
+            "id": "0104cfd9-f0b1-4942-b877-b329228a04a4"
+          }
+        ]
+      },
+      "id": "b185bb44-fa9d-4c28-8a6f-71ee204ff3bf"
     }
   ],
   "playerHit1Script": [],

@@ -16,7 +16,36 @@
   "symbol": "scene_8",
   "x": 229,
   "y": 588,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {},
+      "id": "06f45274-fbbe-46a4-9fb6-0cac65681116"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "a33093ba-7ce3-43ef-8409-82d9b1fcaa18",
+              "$actor[0]$": "6b58a6f8-11f4-4a73-be76-ba3a97545566"
+            },
+            "id": "c4a2ee93-b74e-440e-89e4-f4b75b941453"
+          }
+        ]
+      },
+      "id": "caccde0f-711d-4a75-9732-93f9c561441a"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": []
